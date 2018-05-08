@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from './container/Home';
-import App from './App';
+import Home from './containers/Home';
+import App from './containers/App';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 export default (
