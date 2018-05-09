@@ -9,7 +9,9 @@ class Projects extends Component {
        <h1>These are the Projects I worked on</h1>
        <Zoomy
           imageUrl={require('../../assets/proj-todoapp.jpg')}
-          renderThumbnail={({ showImage }) => <button onClick={showImage}>Show Image</button>}
+          renderThumbnail={({ showImage }) => 
+          <img src={require('../../assets/proj-s-todoapp.jpg')} alt={'todo app'} onClick={showImage}/>
+           }
           scale={[1.1, 1.1]}
           imageProps={{
           style: {
