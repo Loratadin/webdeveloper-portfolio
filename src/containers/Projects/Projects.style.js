@@ -19,8 +19,15 @@ export const ImageButton = styled.div`
 
 export const ProjectBio = styled.div`
 font-size: 14px;
+text-align: center;
+display: flex;
+align-items: center;
+padding: 0 150px;
+line-height: 2.5;
 `;
 
 export const ProjectWrapper = styled.div`
 display: flex;
+justify-content: space-evenly;
+margin: 150px 0;
 `;

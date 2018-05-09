@@ -36,8 +36,10 @@ class Projects extends Component {
          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
         </ProjectBio>
        </ProjectWrapper>
-       
-        <ProjectBio>
+
+
+       <ProjectWrapper>
+       <ProjectBio>
          Donec ullamcorper congue elit sit amet gravida. Fusce blandit condimentum leo a mattis. Donec nec nulla in mi dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor viverra, scelerisque diam eleifend, sodales tortor.
         </ProjectBio>
         <Zoomy
@@ -58,6 +60,9 @@ class Projects extends Component {
            }
           }}
         />
+       </ProjectWrapper>
+       
+        
      </Container>
   );
  }
