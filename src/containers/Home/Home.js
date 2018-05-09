@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Container } from '../../theme/grid';
 import {
   /*Image,*/
@@ -9,7 +10,7 @@ import WhenInView from '../../components/WhenInView/WhenInView';
 
 
 export default class Home extends Component {
-
+  static PropTypes = {};
 
   render() {
     return (
