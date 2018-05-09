@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
 import PropTypes from 'prop-types';
 import {
-   ImageButton
+   ImageButton,
+   ProjectBio
 } from './Projects.style';
 import { Container } from '../../theme/grid';
 
@@ -26,9 +27,29 @@ class Projects extends Component {
           style: {
           width: '100vw',
           height: 'auto'
-    }
-  }}
-/>
+           }
+          }}
+        />
+        <ProjectBio>pim</ProjectBio>
+        <div>pim</div>
+        <Zoomy
+          imageUrl={require('../../assets/proj-dogsperience.jpg')}
+          renderThumbnail={({ showImage }) => 
+          <ImageButton onClick={showImage}>
+           <img
+          src={require('../../assets/proj-s-dogsperience.jpg')} 
+          alt={'dogsperience'} 
+          />
+          </ImageButton>
+           }
+          scale={[1.1, 1.1]}
+          imageProps={{
+          style: {
+          width: '100vw',
+          height: 'auto'
+           }
+          }}
+        />
      </Container>
   );
  }
