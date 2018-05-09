@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Container } from '../../theme/grid';
 import {
   /*Image,*/
-  HeroImage
+  HeroImage,
+  RevealP
 } from './Home.style';
 import WhenInView from '../../components/WhenInView/WhenInView';
 
@@ -21,8 +22,8 @@ export default class Home extends Component {
         {/*<Image src={require('../../assets/us.jpg')} alt="webdevelopers-family"/> */}
         <WhenInView>
           {( { isInView } ) => 
-             <p hide={!isInView}>Thank you for visiting this website and being interested to know who I am. My name is Tania, and Shulga is my last name. I am from Belarus, therefore, my name is spelled like Tatsiana Shulha in my driving license.
-             </p>
+             <RevealP hide={!isInView}>Thank you for visiting this website and being interested to know who I am. My name is Tania, and Shulga is my last name. I am from Belarus, therefore, my name is spelled like Tatsiana Shulha in my driving license.
+             </RevealP>
         }
         </WhenInView>
       </Container>
