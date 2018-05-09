@@ -20,3 +20,7 @@ export const ImageButton = styled.div`
 export const ProjectBio = styled.div`
 font-size: 14px;
 `;
+
+export const ProjectWrapper = styled.div`
+display: flex;
+`;
