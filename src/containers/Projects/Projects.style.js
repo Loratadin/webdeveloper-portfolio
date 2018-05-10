@@ -20,8 +20,6 @@ export const ImageButton = styled.div`
 export const ProjectBio = styled.div`
 font-size: 14px;
 text-align: center;
-display: flex;
-align-items: center;
 padding: 0 150px;
 line-height: 2.5;
 `;

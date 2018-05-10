@@ -33,14 +33,24 @@ class Projects extends Component {
           }}
         />
         <ProjectBio>
+         <h2>
+          To do App
+         </h2>
+         <p>
          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
+         </p>
         </ProjectBio>
        </ProjectWrapper>
 
 
        <ProjectWrapper>
        <ProjectBio>
+       <h2>
+          Dogsperience Concept
+         </h2>
+         <p>
          Donec ullamcorper congue elit sit amet gravida. Fusce blandit condimentum leo a mattis. Donec nec nulla in mi dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor viverra, scelerisque diam eleifend, sodales tortor.
+         </p>
         </ProjectBio>
         <Zoomy
           imageUrl={require('../../assets/proj-dogsperience.jpg')}
