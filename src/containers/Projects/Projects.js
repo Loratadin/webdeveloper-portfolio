@@ -34,7 +34,7 @@ class Projects extends Component {
           }}
         />
         <ProjectBio>
-         <h2>React based <Link href="https://github.com/Loratadin/react-todo-app">To do App</Link></h2>
+         <h2>React based <Link href="https://github.com/Loratadin/react-todo-app" target="_blank">To do App</Link></h2>
          <p>
          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
          </p>
@@ -44,7 +44,7 @@ class Projects extends Component {
 
        <ProjectWrapper>
        <ProjectBio>
-       <h2><Link href="https://github.com/Loratadin/Dogsperience">Dogsperience</Link> Concept</h2>
+       <h2><Link href="https://github.com/Loratadin/Dogsperience" target="_blank">Dogsperience</Link> Concept</h2>
          <p>
          Donec ullamcorper congue elit sit amet gravida. Fusce blandit condimentum leo a mattis. Donec nec nulla in mi dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor viverra, scelerisque diam eleifend, sodales tortor.
          </p>
