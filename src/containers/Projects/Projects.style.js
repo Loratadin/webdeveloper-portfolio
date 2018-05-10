@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lemon } from '../../theme/variables';
 
 export const ImageButton = styled.div`
   cursor: pointer;
@@ -32,6 +33,13 @@ margin: 150px 0;
 
 export const Number = styled.div`
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -50px;
+  top: -110px;
+  z-index: -1;
+
+  h3 {
+    font-size: 120px;
+    margin: 0;
+    color: ${lemon};
+  }
 `;
