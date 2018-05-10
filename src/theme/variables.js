@@ -1,4 +1,5 @@
-export const green = '#e2f96b';
-export const yellow = '#fff266';
+export const lime = '#e2f96b';
+export const green = '#9BE564';
+export const lemon = '#fff266';
 export const black = '#424242';
-export const blue = '#173753';
+export const navy = '#173753';
