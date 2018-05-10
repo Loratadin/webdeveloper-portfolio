@@ -29,3 +29,9 @@ display: flex;
 justify-content: space-evenly;
 margin: 150px 0;
 `;
+
+export const Number = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+`;
