@@ -7,7 +7,7 @@ export const Background = styled.div`
  top: 5vh;
  height: 80vh;
  background-image: url(${require('../../assets/us-bg.png')});
- background-color: rgba(238, 251, 159, 0.75);
+ background-color: rgba(226, 249, 107, 0.75);
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
