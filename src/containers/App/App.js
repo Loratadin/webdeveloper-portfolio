@@ -5,6 +5,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Background></Background>
         {this.props.children}
       </div>
     );
