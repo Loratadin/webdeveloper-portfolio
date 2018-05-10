@@ -15,6 +15,30 @@ function phone(...args) {
  `;
 }
 
+function tablet(...args) {
+ return css`
+    @media(max-width: ${sizes.tablet}px) {
+     ${css(...args)}
+    }
+ `;
+}
+
+function desctop(...args) {
+ return css`
+    @media(max-width: ${sizes.desctop}px) {
+     ${css(...args)}
+    }
+ `;
+}
+
+function monitor(...args) {
+ return css`
+    @media(max-width: ${sizes.monitor}px) {
+     ${css(...args)}
+    }
+ `;
+}
+
 const media = {
  phone
 };
