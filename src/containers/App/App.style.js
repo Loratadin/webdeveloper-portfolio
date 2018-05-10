@@ -6,6 +6,6 @@ export const Background = styled.div`
  width: 80vw;
  top: 10vh;
  height: 80vh;
- background-image: url(${require('../assets/us-bg.png')});
+ background-image: url(${require('../../assets/us-bg.png')});
  background-color: rgba(238, 251, 159, 0.75);
 `;
