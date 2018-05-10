@@ -6,10 +6,13 @@ export const Background = styled.div`
  width: 75vw;
  top: 5vh;
  height: 80vh;
- background-image: url(${require('../../assets/us-bg.png')});
  background-color: rgba(226, 249, 107, 0.75);
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
  z-index: -99;
+
+ & > img {
+  width: 100%;s
+ }
 `;

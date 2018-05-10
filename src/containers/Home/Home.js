@@ -7,6 +7,7 @@ import {
   RevealP
 } from './Home.style';
 import WhenInView from '../../components/WhenInView/WhenInView';
+import { Background } from '../App/App.style';
 
 
 export default class Home extends Component {
@@ -15,6 +16,7 @@ export default class Home extends Component {
   render() {
     return (
       <Container>
+        <Background><img src={require('../../assets/doggy.png')} alt={'Doggy'}/></Background>
         <h1>Hi Home!</h1>
         <HeroImage>
           <h1> &lt; ... &gt; </h1>

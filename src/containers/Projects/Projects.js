@@ -9,11 +9,13 @@ import {
 } from './Projects.style';
 import { Container, Relative } from '../../theme/grid';
 import { Link } from '../../theme/types';
+import { Background } from '../App/App.style';
 
 class Projects extends Component {
  render () {
   return (
      <Container>
+       <Background><img src={require('../../assets/us-bg.png')} alt={'Us'}/></Background>
        <h1>These are the Projects I worked on</h1>
        <ProjectWrapper>
        <Zoomy

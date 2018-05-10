@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { lemon } from '../../theme/variables';
 
+
 export const ImageButton = styled.div`
   cursor: pointer;
   overflow: hidden;
@@ -41,5 +42,6 @@ export const Number = styled.div`
     font-size: 120px;
     margin: 0;
     color: ${lemon};
+    opacity: 0.7;
   }
 `;
