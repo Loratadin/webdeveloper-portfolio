@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Zoomy from 'react-zoomy';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import {
    ImageButton,
    ProjectBio,
