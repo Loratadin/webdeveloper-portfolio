@@ -6,6 +6,7 @@ export const Image = styled.img`
 `;
 
 export const HeroImage = styled.div`
+   margin-top: 5vh;
    height: 100vh;
    background-image: url('${require('../../assets/us.jpg')}');
    background-repeat: no-repeat;
