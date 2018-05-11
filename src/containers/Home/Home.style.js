@@ -18,7 +18,7 @@ export const HeroImage = styled.div`
    color: #fff;
 
    h1 {
-    margin-top: 320px;
+    margin-top: 23%;
    }
 `;
 
