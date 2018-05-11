@@ -1,15 +1,15 @@
 import { css } from 'styled-components';
 
 const sizes = {
-   phone: 376,
-   tablet: 768,
-   desctop: 992,
-   monitor: 1170
+   phone: 300,
+   tablet: 451,
+   desktop: 769,
+   monitor: 1025
 };
 
 function phone(...args) {
  return css`
-    @media(max-width: ${sizes.phone}px) {
+    @media(min-width: ${sizes.phone}px) {
      ${css(...args)}
     }
  `;
@@ -17,15 +17,15 @@ function phone(...args) {
 
 function tablet(...args) {
  return css`
-    @media(max-width: ${sizes.tablet}px) {
+    @media(min-width: ${sizes.tablet}px) {
      ${css(...args)}
     }
  `;
 }
 
-function desctop(...args) {
+function desktop(...args) {
  return css`
-    @media(max-width: ${sizes.desctop}px) {
+    @media(min-width: ${sizes.desctop}px) {
      ${css(...args)}
     }
  `;
@@ -33,14 +33,17 @@ function desctop(...args) {
 
 function monitor(...args) {
  return css`
-    @media(max-width: ${sizes.monitor}px) {
+    @media(min-width: ${sizes.monitor}px) {
      ${css(...args)}
     }
  `;
 }
 
 const media = {
- phone
+ phone,
+ tablet,
+ desktop,
+ monitor
 };
 
 export default media;
