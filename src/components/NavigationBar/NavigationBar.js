@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import { NavigationContainer } from './NavigationBar.style';
 
 class NavigationBar extends Component {
  render() {
   return (
-   <div>
+   <NavigationContainer>
     <div>Home</div>
     <div>Projects</div>
     <div>About me</div>
-   </div>
+   </NavigationContainer>
   );
  }
 }
