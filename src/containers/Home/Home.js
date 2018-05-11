@@ -17,7 +17,6 @@ export default class Home extends Component {
     return (
       <Container>
         <Background><img src={require('../../assets/doggy.png')} alt={'Doggy'}/></Background>
-        <h1>Hi Home!</h1>
         <HeroImage>
           <h1> &lt; ... &gt; </h1>
           <h2>Front-end Developer</h2>
