@@ -5,9 +5,9 @@ class NavigationBar extends Component {
  render() {
   return (
    <NavigationContainer>
-    <NavItem>Home</NavItem>
-    <NavItem>Projects</NavItem>
-    <NavItem>About me</NavItem>
+    <NavItem href="/">Home</NavItem>
+    <NavItem href="/projects">Projects</NavItem>
+    <NavItem href="/about-me">About me</NavItem>
    </NavigationContainer>
   );
  }
