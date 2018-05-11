@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { Container } from '../../theme/grid';
 import {
   /*Image,*/
@@ -11,7 +11,7 @@ import { Background } from '../App/App.style';
 
 
 export default class Home extends Component {
-  static PropTypes = {};
+  static propTypes = {};
 
   render() {
     return (

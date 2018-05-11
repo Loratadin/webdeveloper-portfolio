@@ -42,12 +42,14 @@ padding: 0 150px;
 export const ProjectWrapper = styled.div`
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 margin: 25px 0;
 ${media.desktop`
 margin: 50px 0;
 `}
 ${media.monitor`
 margin: 150px 0;
+flex-wrap: nowrap;
 justify-content: space-evenly;
 `}
 `;

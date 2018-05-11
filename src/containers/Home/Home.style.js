@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { css } from 'styled-components';
 
 export const Image = styled.img`
    width: 100%;
@@ -10,7 +11,6 @@ export const HeroImage = styled.div`
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -32,14 +32,12 @@ position: relative;
  width: 100%;
  height: 100%;
  background-color: #e2f96b;
-
  transform-origin: left:
  transform: rotateY(90deg);
-
  transition: transform 3s;
 }
 
-${({ hide }) => hide &&`
+${({ hide }) => hide && css`
   &:after {
   transition: transformY(0deg);
 }
