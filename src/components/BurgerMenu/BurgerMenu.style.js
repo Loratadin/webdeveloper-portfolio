@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { lemon, navy, lime, green } from '../../theme/variables';
+import { lemon, navy, lime, green, black } from '../../theme/variables';
 
 export const Burger = styled.div`
  position: fixed;
@@ -11,7 +11,7 @@ export const Burger = styled.div`
  overflow: hidden;
  display: block;
  cursor: pointer;
- background: linear-gradient(180deg,${lemon},${lime},${green},${navy});
+ border: 1px solid ${lime};
 `;
 export const BurgerHover = styled.div`
 position: absolute;

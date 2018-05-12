@@ -8,8 +8,10 @@ export const ImageButton = styled.div`
   overflow: hidden;
   display: inline-block;
   width: 85vw;
+  box-shadow: 0 25px 30px 0 rgba(0,0,0,.2);
   ${media.monitor`
      width: 35vw;
+     box-shadow: 0 50px 60px 0 rgba(0,0,0,.2);
    `}
 
   & > img {
