@@ -17,7 +17,7 @@ class BurgerMenu extends Component {
     <BurgerLineWrap class="burger-line-wrap-2"></BurgerLineWrap>
     <BurgerCloseWrap class="burger-close-wrap-0"></BurgerCloseWrap>
     <BurgerCloseWrap class="burger-close-wrap-1"></BurgerCloseWrap>
-    <BurgerCloseWrap class="burger-border-wrap"></BurgerCloseWrap>
+    <BurgerBorderWrap></BurgerBorderWrap>
     <BurgerMask></BurgerMask>
     </Burger>
   );
