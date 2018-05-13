@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import { 
- BurgerMain,
- Burger, 
- BurgerHover, 
- BurgerLineWrap,
- BurgerCloseWrap, 
- BurgerBorderWrap, 
- BurgerMask } from './BurgerMenu.style';
+import { BurgerLineWrap, BurgerCloseWrap} from './BurgerMenu.style';
+ import './BurgerMenu.css';
 
 
 const Line0Style = {
@@ -24,26 +18,17 @@ const Close0Style = {
 const Close1Style = {
  transform: 'rotate(-45deg)'
 }
-const DivStyle = {
- position: 'fixed'
-}
+
 class BurgerMenu extends Component {
-
-
  render() {
   return (
-   <BurgerMain>
-    <Burger>
+    <div className="burger-menu">
     <BurgerLineWrap style={Line0Style}></BurgerLineWrap>
     <BurgerLineWrap style={Line1Style}></BurgerLineWrap>
     <BurgerLineWrap style={Line2Style}></BurgerLineWrap>
     <BurgerCloseWrap style={Close0Style}></BurgerCloseWrap>
     <BurgerCloseWrap style={Close1Style}></BurgerCloseWrap>
-    <BurgerBorderWrap></BurgerBorderWrap>
-    <BurgerMask></BurgerMask>
-    </Burger>
-    <BurgerHover></BurgerHover>
-    </BurgerMain>
+    </div>  
   );
  }
 }

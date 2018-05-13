@@ -1,34 +1,6 @@
 import styled from 'styled-components';
-import { lemon, navy, lime, green, black } from '../../theme/variables';
+import { navy } from '../../theme/variables';
 
-export const BurgerMain = styled.div`
-position: fixed;
-`;
-
-export const Burger = styled.div`
- position: fixed;
- top: 60px;
- right: 30px;
- width: 60px;
- height: 60px;
- z-index: 1;
- display: block;
- cursor: pointer;
- border: 1px solid ${lime};
- &:hover {BurgerHover} {
- transform: translate3d(0,105%,0);
- }
-`;
-export const BurgerHover = styled.div`
-top: 120px;
-right: 30px;
-width: 60px;
-height: 60px;
-display: block;
-z-index: 1;
-background: linear-gradient(180deg,${lemon},${navy},${lime},${green});
-transition: transform .8s cubic-bezier(.165,.84,.44,1);
-`;
 
 export const BurgerLineWrap = styled.div`
 left: 21px;
@@ -38,6 +10,7 @@ height: 1px;
 overflow: hidden;
 display: block;
 background-color: ${navy};
+z-index: 2;
 `;
 
 export const BurgerCloseWrap = styled.div`
@@ -50,8 +23,5 @@ overflow: hidden;
 display: block;
 background-color: ${navy};
 visibility: hidden;
+z-index: 2;
 `;
-
-
-export const BurgerBorderWrap = styled.div``;
-export const BurgerMask = styled.div``;
