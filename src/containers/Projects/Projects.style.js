@@ -17,6 +17,7 @@ export const ImageButton = styled.div`
   & > img {
    transition: transform .3s;
    width: 100%;
+   display: block;
   }
   
 
