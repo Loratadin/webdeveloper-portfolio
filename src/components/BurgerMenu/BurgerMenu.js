@@ -1,25 +1,49 @@
 import React, { Component } from 'react';
 import { 
+ BurgerMain,
  Burger, 
  BurgerHover, 
- BurgerLineWrap, 
+ BurgerLineWrap,
  BurgerCloseWrap, 
  BurgerBorderWrap, 
  BurgerMask } from './BurgerMenu.style';
 
+
+const Line0Style = {
+  top: '26px'
+};
+const Line1Style = {
+ top: '30px'
+};
+const Line2Style = {
+ top: '34px'
+};
+const Close0Style = {
+ transform: 'rotate(45deg)'
+}
+const Close1Style = {
+ transform: 'rotate(-45deg)'
+}
+const DivStyle = {
+ position: 'fixed'
+}
 class BurgerMenu extends Component {
+
+
  render() {
   return (
+   <BurgerMain>
     <Burger>
-    <BurgerHover></BurgerHover>
-    <BurgerLineWrap class="burger-line-wrap-0"></BurgerLineWrap>
-    <BurgerLineWrap class="burger-line-wrap-1"></BurgerLineWrap>
-    <BurgerLineWrap class="burger-line-wrap-2"></BurgerLineWrap>
-    <BurgerCloseWrap class="burger-close-wrap-0"></BurgerCloseWrap>
-    <BurgerCloseWrap class="burger-close-wrap-1"></BurgerCloseWrap>
+    <BurgerLineWrap style={Line0Style}></BurgerLineWrap>
+    <BurgerLineWrap style={Line1Style}></BurgerLineWrap>
+    <BurgerLineWrap style={Line2Style}></BurgerLineWrap>
+    <BurgerCloseWrap style={Close0Style}></BurgerCloseWrap>
+    <BurgerCloseWrap style={Close1Style}></BurgerCloseWrap>
     <BurgerBorderWrap></BurgerBorderWrap>
     <BurgerMask></BurgerMask>
     </Burger>
+    <BurgerHover></BurgerHover>
+    </BurgerMain>
   );
  }
 }
