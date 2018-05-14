@@ -22,4 +22,8 @@ export const Link = styled.a`
    background-color: ${green};
   }
 `;
+{/* if align property is defind then say text-align and value */}
+export const H2 = styled.h2`
+  ${( {align} ) => align && `text-align: ${align};`} 
+`;
 
