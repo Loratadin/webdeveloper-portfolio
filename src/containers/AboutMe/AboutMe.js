@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from '../../theme/grid';
 import { Background } from '../App/App.style';
+import ReactPlayer from 'react-player';
 
 class AboutMe extends Component {
  render(){
