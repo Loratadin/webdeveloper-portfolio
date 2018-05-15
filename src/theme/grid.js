@@ -22,6 +22,24 @@ export const Container = styled.div`
     font-size: 55px;
    }
    `}
+   h2 {
+     font-size: 12px;
+   }
+   ${media.tablet`
+   h2 {
+    font-size: 14px;
+   }
+   `}
+   ${media.desktop`
+   h2 {
+    font-size: 16px;
+   }
+   `}
+   ${media.monitor`
+   h2 {
+    font-size: 20px;
+   }
+   `}
 `;
 
 export const Relative = styled.div`
