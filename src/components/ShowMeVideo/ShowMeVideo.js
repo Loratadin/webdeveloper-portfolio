@@ -33,6 +33,8 @@ operation() {
             height="auto"
             url={require('../../assets/video.mp4')}/>
          </VideoContainer>
+         <H2 align="left">Tell me something to inspire me today</H2>
+         <LimeButton><img src={require('../../assets/lime.png')} alt={'lime'}/></LimeButton>
          </div>
     : null}
     </div>
