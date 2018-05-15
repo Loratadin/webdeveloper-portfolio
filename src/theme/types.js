@@ -22,8 +22,8 @@ export const Link = styled.a`
    background-color: ${green};
   }
 `;
-{/* if align property is defind then say text-align and value */}
-export const H2 = styled.h2`
+{/* if align property is defind then say text-align and value. Order in array is important */}
+export const [H1, H2, H3] = ['h1', 'h2', 'h3']
+.map((tag) => styled[tag]`
   ${( {align} ) => align && `text-align: ${align};`} 
-`;
-
+`)
