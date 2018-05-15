@@ -22,3 +22,8 @@ export const StyledPlayButton = styled(PlayButton)`
    left: 50%;
    transform: translate(-50%, -50%);
 `;
+
+export const ShowMe = styled.button`
+  cursor: pointer;
+  background-color: green;
+`;
