@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from '../../theme/grid';
 import { Background } from '../App/App.style';
-import ShowMeVideo from '../../components/ShowMe/ShowMe';
+import ShowMeVideo from '../../components/ShowMeVideo/ShowMeVideo';
 import { H2 }  from '../../theme/types';
 
 class AboutMe extends Component {

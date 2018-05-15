@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LimeButton } from './ShowMe.style';
+import { LimeButton } from './ShowMeVideo.style';
 import { H2 }  from '../../theme/types';
 import { VideoContainer, StyledPlayButton } from '../../containers/AboutMe/AboutMe.style';
 import ReactPlayer from 'react-player';
