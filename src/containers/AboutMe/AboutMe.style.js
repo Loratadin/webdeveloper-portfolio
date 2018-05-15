@@ -17,6 +17,7 @@ export const VideoContainer = styled(Relative)`
 
 export const StyledPlayButton = styled(PlayButton)`
    position: absolute;
+   width: 20%;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
