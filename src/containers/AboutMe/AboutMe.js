@@ -5,7 +5,6 @@ import ReactPlayer from 'react-player';
 import {H2} from '../../theme/types';
 import { VideoContainer, StyledPlayButton } from './AboutMe.style';
 
-
 class AboutMe extends Component {
  render(){
   return (
@@ -15,14 +14,13 @@ class AboutMe extends Component {
       <H2 align="right">Tell me something to inspire me today</H2>
       <H2 align="center">Ok! All you need to know is that everything is possible. We live in a wonderful world that is full of beauty, charm, and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.
       </H2>
-      <VideoContainer>
-       <StyledPlayButton/>
-        <ReactPlayer 
-         width="100%"
-         height="auto"
-         controls
-         url={require('../../assets/video.mp4')}/>
-      </VideoContainer>
+           <VideoContainer>
+           <StyledPlayButton/>
+            <ReactPlayer 
+             width="100%"
+             height="auto"
+             url={require('../../assets/video.mp4')}/>
+          </VideoContainer>
     </Container>
   );
  }
