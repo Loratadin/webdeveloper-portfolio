@@ -24,7 +24,7 @@ operation() {
  render() {
   return (
    <div>
-   <H2 align="left">Why did you decide to learn coding?</H2>
+   <H2 align="right">Why did you decide to learn coding?</H2>
    <LimeButton style={ButtonRightStyle} onClick={() => this.operation()}><img src={require('../../assets/lime.png')} alt={'lime'}/></LimeButton>
       { this.state.showMe ? 
       <div>
