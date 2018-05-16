@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from '../../theme/media';
 import  ReactAudioPlayer  from 'react-audio-player';
-import { lemon } from '../../theme/variables';
+import { lemon, lime, navy } from '../../theme/variables';
 
 export const MP3Player = styled(ReactAudioPlayer)`
 `;
@@ -12,7 +12,8 @@ export const MP3PlayerWrapper = styled.div`
  padding: 10px;
  margin: 10px auto;
  border-radius: 10px;
- background-color: ${lemon};
+ background-color: ${navy};
+ color: ${lime};
  font-size: 14px;
  display: flex;
  align-items: center;
