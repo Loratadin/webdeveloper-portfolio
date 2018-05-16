@@ -4,11 +4,10 @@ import  ReactAudioPlayer  from 'react-audio-player';
 import { lemon } from '../../theme/variables';
 
 export const MP3Player = styled(ReactAudioPlayer)`
-margin-left: 15px;
 `;
 
 export const MP3PlayerWrapper = styled.div`
- width: 50%;
+ width: 40%;
  height: auto;
  padding: 10px;
  margin: 10px auto;
@@ -18,4 +17,12 @@ export const MP3PlayerWrapper = styled.div`
  display: flex;
  align-items: center;
  justify-content: center;
+ & > img {
+  margin-right: 5%;
+ }
+`;
+
+export const ColumnContainer = styled.div`
+ display: flex;
+ flex-direction: column;
 `;
