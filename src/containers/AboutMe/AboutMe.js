@@ -3,7 +3,6 @@ import { Container } from '../../theme/grid';
 import { Background } from '../App/App.style';
 import ShowMeVideo from '../../components/ShowMeVideo/ShowMeVideo';
 import ShowMeAudio from '../../components/ShowMeAudio/ShowMeAudio';
-import { H2 }  from '../../theme/types';
 
 class AboutMe extends Component {
  render(){

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { LimeButton } from '../ShowMeVideo/ShowMeVideo.style';
 import { H2 }  from '../../theme/types';
-import ReactPlayer from 'react-player';
+import ReactAudioPlayer from 'react-audio-player';
 
 class ShowMeAudio extends Component {
  constructor(props) {
@@ -26,10 +26,11 @@ operation() {
       <div>
           <H2 align="center">Well, because it's something you can do while listening to music.</H2>
           <H2 align="center">Just kidding;) Enjoy the music as a background while you are my guest on this site.</H2>
-          <ReactPlayer 
-            width="100%"
-            height="auto"
-            url={require('../../assets/1.mp3')}/>
+          <ReactAudioPlayer
+            src="../assets/1.mp3"
+            autoPlay
+            controls
+          />
           <p>Milo Bice - Kljucko</p>
           <p>Taylor Swift - Delicate</p>
           <p>Passenger - Let Her Go</p>
