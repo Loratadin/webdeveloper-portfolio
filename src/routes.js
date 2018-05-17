@@ -11,7 +11,7 @@ export default (
 <Route path="/" component={App} />
 <Route exact path="/" component={Home} />
 <Route path="/projects" component={Projects} />
-<Route path="/aboutme" component={AboutMe} />
+<Route path="/about-me" component={AboutMe} />
 </div>
 </BrowserRouter>
 );
