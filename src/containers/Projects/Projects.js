@@ -81,6 +81,38 @@ class Projects extends Component {
           }}
         />
        </ProjectWrapper>
+
+       <ProjectWrapper>
+       <Zoomy
+          imageUrl={require('../../assets/proj-coffeeshop.jpg')}
+          renderThumbnail={({ showImage }) => 
+          <ImageButton onClick={showImage}>
+           <img
+          src={require('../../assets/proj-s-coffeeshop.jpg')} 
+          alt={'coffeeshop'} 
+          />
+          </ImageButton>
+           }
+          scale={[1.1, 1.1]}
+          imageProps={{
+          style: {
+          width: '100vw',
+          height: 'auto'
+           }
+          }}
+        />
+        <ProjectBio>
+        <Relative>
+         <Number>
+           <h3>03</h3>
+         </Number>
+         </Relative>
+         <h2><Link href="https://github.com/Loratadin/coffeeshop" target="_blank">Coffeeshop</Link> Concept</h2>
+         <p>
+         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
+         </p>
+        </ProjectBio>
+       </ProjectWrapper>
        
         
      </Container>
