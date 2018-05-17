@@ -145,6 +145,38 @@ class Projects extends Component {
           }}
         />
        </ProjectWrapper>
+
+       <ProjectWrapper>
+       <Zoomy
+          imageUrl={require('../../assets/proj-mdportfolio.jpg')}
+          renderThumbnail={({ showImage }) => 
+          <ImageButton onClick={showImage}>
+           <img
+          src={require('../../assets/proj-s-mdportfolio.jpg')} 
+          alt={'professional portfolio'} 
+          />
+          </ImageButton>
+           }
+          scale={[1.1, 1.1]}
+          imageProps={{
+          style: {
+          width: '100vw',
+          height: 'auto'
+           }
+          }}
+        />
+        <ProjectBio>
+        <Relative>
+         <Number>
+           <h3>05</h3>
+         </Number>
+         </Relative>
+         <h2><Link href="https://github.com/Loratadin/md-portfolio" target="_blank">Portfolio</Link> Concept for a Doctor of Medicine</h2>
+         <p>
+         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
+         </p>
+        </ProjectBio>
+       </ProjectWrapper>
        
         
      </Container>
