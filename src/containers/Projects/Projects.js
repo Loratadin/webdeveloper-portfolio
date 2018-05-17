@@ -113,6 +113,38 @@ class Projects extends Component {
          </p>
         </ProjectBio>
        </ProjectWrapper>
+
+       <ProjectWrapper>
+       <ProjectBio>
+       <Relative>
+         <Number>
+           <h3>04</h3>
+         </Number>
+         </Relative>
+       <h2><Link href="https://github.com/Loratadin/montessori" target="_blank">Montessori School</Link> Concept</h2>
+         <p>
+         Donec ullamcorper congue elit sit amet gravida. Fusce blandit condimentum leo a mattis. Donec nec nulla in mi dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor viverra, scelerisque diam eleifend, sodales tortor.
+         </p>
+        </ProjectBio>
+        <Zoomy
+          imageUrl={require('../../assets/proj-montessori.jpg')}
+          renderThumbnail={({ showImage }) => 
+          <ImageButton onClick={showImage}>
+           <img
+          src={require('../../assets/proj-s-montessori.jpg')} 
+          alt={'montessori'} 
+          />
+          </ImageButton>
+           }
+          scale={[1.1, 1.1]}
+          imageProps={{
+          style: {
+          width: '100vw',
+          height: 'auto'
+           }
+          }}
+        />
+       </ProjectWrapper>
        
         
      </Container>
