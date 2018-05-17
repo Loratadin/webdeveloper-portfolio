@@ -1,16 +1,32 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import media from '../../theme/media';
+import { green } from '../../theme/variables';
 
 export const NavigationContainer = styled.div`
-display: flex;
-position: fixed;
-right: 0;
-display: none;
+width: 100vw;
+height: 100vh;
+background-color: ${green};
+overflow: hidden;
+${media.desktop`
+  width: 40vw;
+`}
 `;
 
 export const NavItem = styled.a`
 text-decoration: none;
 position: relative;
-margin-right: 30px;
+display: block;
 cursor: pointer;
+color: #fff;
+font-size: 40px;
+${media.tablet`
+font-size: 45px;
+`}
+${media.desktop`
+font-size: 50px;
+`}
+${media.monitor`
+font-size: 60px;
+`}
 `;
