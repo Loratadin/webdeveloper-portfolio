@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import media from '../../theme/media';
-import { green } from '../../theme/variables';
+import { green, navy } from '../../theme/variables';
 
 export const NavigationContainer = styled.div`
 width: 100vw;
@@ -20,6 +20,9 @@ display: block;
 cursor: pointer;
 color: #fff;
 font-size: 40px;
+&:hover {
+ color: ${navy};
+}
 ${media.tablet`
 font-size: 45px;
 `}
