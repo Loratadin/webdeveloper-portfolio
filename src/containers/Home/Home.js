@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-import { Container } from '../../theme/grid';
-import { HeroImage } from './Home.style';
+import { HeroImage, Socials } from './Home.style';
 
+const homeWrapper = {
+  position: 'relative',
+  width: '100%',
+  height: '100%',
+  overflow: 'hidden'
+}
 export default class Home extends Component {
-  //static propTypes = {};
 
   render() {
     return (
-      <Container>
+      <div style={homeWrapper}>
+        <Socials><img src={require('../../assets/github.png')} alt={'Us'}/></Socials>
+        <Socials><img src={require('../../assets/email.png')} alt={'email'}/></Socials>
         <HeroImage>
           <h1> &lt; ... &gt; </h1>
           <h2>Front-end Developer</h2>
         </HeroImage>
-      </Container>
+      </div>
     );
   }
 }
