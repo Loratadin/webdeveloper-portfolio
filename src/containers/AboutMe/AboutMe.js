@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container } from '../../theme/grid';
 import { Background } from '../App/App.style';
-import ShowMeVideo from '../../components/ShowMeVideo/ShowMeVideo';
-import ShowMeAudio from '../../components/ShowMeAudio/ShowMeAudio';
+import VideoInspire from '../../components/VideoInspire/VideoInspire';
+import AudioMusic from '../../components/AudioMusic/AudioMusic';
 
 class AboutMe extends Component {
  render(){
@@ -10,8 +10,8 @@ class AboutMe extends Component {
    <Container>
    <Background><img src={require('../../assets/doggy.png')} alt={'Doggy'}/></Background>
       <h1>About me</h1>
-      <ShowMeVideo/>
-      <ShowMeAudio/>
+      <VideoInspire/>
+      <AudioMusic/>
     </Container>
   );
  }
