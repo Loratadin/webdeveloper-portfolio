@@ -36,7 +36,7 @@ showNav = () => {
          <NavItem href="/">Home</NavItem>
          <NavItem href="/projects">Projects</NavItem>
          <NavItem href="/about-me">About me</NavItem>
-         <NavItem href="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI/edit?usp=sharing">Resume</NavItem>
+         <NavItem href="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI/edit?usp=sharing" target="_blank">Resume</NavItem>
          </NavigationContainer>
        }
    </div>

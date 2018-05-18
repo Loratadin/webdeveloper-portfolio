@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { green } from '../../theme/variables';
 
 export const HeroImage = styled.div`
+position: relative;
    margin: 15%;
    width: 70%;
    height: 70%;
@@ -13,6 +15,16 @@ export const HeroImage = styled.div`
    justify-content: center;
    text-align: center;
    color: #fff;
+   &:after {
+     position: absolute;
+     content: '';
+     top: -120px;
+     left: -120px;
+     right: -120px;
+     bottom: -120px;
+     border: 1px solid ${green};
+     z-index: -1;
+   }
 
    h1 {
     margin-top: 23%;
@@ -20,12 +32,11 @@ export const HeroImage = styled.div`
 `;
 
 export const Socials = styled.div`
-  position: absolute;
-  bottom: 20%;
-  left: 5%;
-  width: 4%;
-  height: 4%;
-  margin-bottom: 2%;
+position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  }
   & > img {
    width: 100%;
   }
