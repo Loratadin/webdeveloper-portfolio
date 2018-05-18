@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import media from '../../theme/media';
 import  ReactAudioPlayer  from 'react-audio-player';
-import { lemon, lime, navy } from '../../theme/variables';
+import { lime, navy } from '../../theme/variables';
 
 export const MP3Player = styled(ReactAudioPlayer)`
 `;
