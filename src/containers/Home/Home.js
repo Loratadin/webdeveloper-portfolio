@@ -16,7 +16,11 @@ const socialsWrapper = {
   display: 'flex',
   flexWrap: 'wrap',
   backgroundColor: '#fff',
-  paddingTop: '10px'
+  padding: '10px 0'
+}
+const SocialImg = {
+  width: '100%',
+  display: 'block'
 }
 export default class Home extends Component {
 
@@ -24,9 +28,21 @@ export default class Home extends Component {
     return (
       <div style={homeWrapper}>
        <div style={socialsWrapper}>
-        <Socials><img src={require('../../assets/github.png')} alt={'Us'}/></Socials>
-        <Socials><img src={require('../../assets/email.png')} alt={'email'}/></Socials>
-        <Socials><img src={require('../../assets/linkedin.png')} alt={'linkedin'}/></Socials>
+        <Socials>
+          <a href="https://github.com/Loratadin" target="_blank" rel="noopener noreferrer" >
+            <img style={SocialImg} src={require('../../assets/github.png')} alt={'Us'}/>
+          </a>
+        </Socials>
+        <Socials>
+          <a href="mailto:taniashulha@gmail.com">
+            <img style={SocialImg} src={require('../../assets/email.png')} alt={'email'}/>
+          </a> 
+        </Socials>
+        <Socials>
+          <a href="https://www.linkedin.com/in/tatsiana-shulha-450413b8/" target="_blank" rel="noopener noreferrer" >
+            <img style={SocialImg} src={require('../../assets/linkedin.png')} alt={'linkedin'}/>
+          </a>
+        </Socials>
         </div>
         <HeroImage>
           <h1> &lt; ... &gt; </h1>

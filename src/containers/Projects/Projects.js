@@ -4,7 +4,8 @@ import {
    ImageButton,
    ProjectBio,
    ProjectWrapper,
-   Number
+   Number,
+   GitLink
 } from './Projects.style';
 import { Container, Relative } from '../../theme/grid';
 import { Link } from '../../theme/types';
@@ -44,6 +45,7 @@ class Projects extends Component {
          <h2>React based <Link href="https://github.com/Loratadin/react-todo-app" target="_blank">To do App</Link></h2>
          <p>
          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
+         <GitLink href="https://github.com/Loratadin/react-todo-app" target="_blank"><img src={require('../../assets/github-dark.png')} alt={'GitHub'}/></GitLink>
          </p>
         </ProjectBio>
        </ProjectWrapper>

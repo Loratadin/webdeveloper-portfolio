@@ -3,6 +3,7 @@ import { Container } from '../../theme/grid';
 import { Background } from '../App/App.style';
 import VideoInspire from '../../components/VideoInspire/VideoInspire';
 import AudioMusic from '../../components/AudioMusic/AudioMusic';
+import VideoTalk from '../../components/VideoTalk/VideoTalk';
 
 class AboutMe extends Component {
  render(){
@@ -12,6 +13,7 @@ class AboutMe extends Component {
       <h1>About me</h1>
       <VideoInspire/>
       <AudioMusic/>
+      <VideoTalk/>
     </Container>
   );
  }

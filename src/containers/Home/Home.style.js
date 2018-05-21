@@ -25,19 +25,14 @@ position: relative;
      border: 1px solid ${green};
      z-index: -1;
    }
-
    h1 {
     margin-top: 23%;
    }
 `;
 
 export const Socials = styled.div`
-position: relative;
+  position: relative;
   width: 100%;
   height: auto;
-  margin-bottom: 5px;
-  }
-  & > img {
-   width: 100%;
-  }
+  margin-bottom: 15px;
 `;

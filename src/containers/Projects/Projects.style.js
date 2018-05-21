@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { lemon } from '../../theme/variables';
+import { lemon, navy, green } from '../../theme/variables';
 import media from '../../theme/media';
 
 
@@ -83,4 +83,29 @@ export const Number = styled.div`
       font-size: 120px;
    `}
   }
+`;
+
+export const GitLink = styled.a`
+position: relative;
+display: inline-block;
+width: 40px;
+height: 40px;
+margin-left: 5px;
+&:after {
+  position: absolute;
+  content: '';
+  top: -5%;
+  bottom: -5%;
+  left: -5%;
+  right: -5%;
+  border-bottom: 2px solid ${navy};
+  transition: height .1s, background-color .1s;
+  z-index: -1;
+}
+&:hover:after {
+  border-bottom: 15px solid ${green};
+}
+& > img {
+  width: 100%;
+}
 `;
