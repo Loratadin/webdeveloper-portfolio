@@ -13,7 +13,7 @@ class VideoTalk extends Component {
                  controls
                  width="100%"
                  height="auto"
-                 url={require('../../assets/video.mp4')}/>
+                 url={'https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4'}/>
          </VideoContainer>
          </div>
   );

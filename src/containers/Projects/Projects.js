@@ -44,7 +44,7 @@ class Projects extends Component {
          </Relative>
          <h2>React based <Link href="https://github.com/Loratadin/react-todo-app" target="_blank">To do App</Link></h2>
          <p>
-         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
+         Implemented a fast performing application which allows creating, editing and deleting tasks. Created reusable components to make the application scalable. Implemented a validation, so that the app shows error messages if a task already exists or a user is trying to save an empty task.
          <GitLink href="https://github.com/Loratadin/react-todo-app" target="_blank"><img src={require('../../assets/github-dark.png')} alt={'GitHub'}/></GitLink>
          </p>
         </ProjectBio>
@@ -58,18 +58,18 @@ class Projects extends Component {
            <h3>02</h3>
          </Number>
          </Relative>
-       <h2><Link href="https://github.com/Loratadin/Dogsperience" target="_blank">Dogsperience</Link> Concept</h2>
+       <h2><Link href="https://github.com/Loratadin/montessori" target="_blank">Montessori School</Link> Concept</h2>
          <p>
-         Donec ullamcorper congue elit sit amet gravida. Fusce blandit condimentum leo a mattis. Donec nec nulla in mi dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor viverra, scelerisque diam eleifend, sodales tortor.
+         Implemented a homepage with a responsive design. Used Vanila JavaScript to create such features as real time clock, search form, theme color change controls, and sign up form. Created a flex panel photo gallery with delightful animation. 
          </p>
         </ProjectBio>
         <Zoomy
-          imageUrl={require('../../assets/proj-dogsperience.jpg')}
+          imageUrl={require('../../assets/proj-montessori.jpg')}
           renderThumbnail={({ showImage }) => 
           <ImageButton onClick={showImage}>
            <img
-          src={require('../../assets/proj-s-dogsperience.jpg')} 
-          alt={'dogsperience'} 
+          src={require('../../assets/proj-s-montessori.jpg')} 
+          alt={'montessori'} 
           />
           </ImageButton>
            }
@@ -110,7 +110,7 @@ class Projects extends Component {
          </Relative>
          <h2><Link href="https://github.com/Loratadin/coffeeshop" target="_blank">Coffeeshop</Link> Concept</h2>
          <p>
-         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
+         Delivered high-quality homepage for a coffee shop concept. Created delightful design with parallax effect in CSS, fully responsive for any device. Implemented a full screen slider, and an animated skewed section with Vanilla JavaScript. Extended default JavaScript functionality by using jQuery for a hamburger menu.
          </p>
         </ProjectBio>
        </ProjectWrapper>
@@ -122,18 +122,18 @@ class Projects extends Component {
            <h3>04</h3>
          </Number>
          </Relative>
-       <h2><Link href="https://github.com/Loratadin/montessori" target="_blank">Montessori School</Link> Concept</h2>
+       <h2><Link href="https://github.com/Loratadin/Dogsperience" target="_blank">Dogsperience</Link> Concept</h2>
          <p>
-         Donec ullamcorper congue elit sit amet gravida. Fusce blandit condimentum leo a mattis. Donec nec nulla in mi dignissim condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor viverra, scelerisque diam eleifend, sodales tortor.
+         Implemented a static homepage for an online pet store concept. Used HTML, CSS and jQuery for the slider.
          </p>
         </ProjectBio>
         <Zoomy
-          imageUrl={require('../../assets/proj-montessori.jpg')}
+          imageUrl={require('../../assets/proj-dogsperience.jpg')}
           renderThumbnail={({ showImage }) => 
           <ImageButton onClick={showImage}>
            <img
-          src={require('../../assets/proj-s-montessori.jpg')} 
-          alt={'montessori'} 
+          src={require('../../assets/proj-s-dogsperience.jpg')} 
+          alt={'dogsperience'} 
           />
           </ImageButton>
            }
@@ -174,7 +174,7 @@ class Projects extends Component {
          </Relative>
          <h2><Link href="https://github.com/Loratadin/md-portfolio" target="_blank">Portfolio</Link> Concept for a Doctor of Medicine</h2>
          <p>
-         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis eget turpis at tempor. In quis lobortis est, sit amet placerat mauris. Quisque pulvinar justo quis ipsum efficitur, id finibus risus blandit. Fusce interdum pretium nunc, dictum efficitur odio venenatis eget.
+         Created design and implemented a fully responsive personal portfolio concept for a medical professional. Integrated JavaScript for navigation menu. Wrote modular, mobile-first CSS with help of SASS preprocessor. Used Parcel as a module bundler. Created contact form and animated gallery.  
          </p>
         </ProjectBio>
        </ProjectWrapper>

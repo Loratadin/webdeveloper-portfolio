@@ -88,8 +88,8 @@ export const Number = styled.div`
 export const GitLink = styled.a`
 position: relative;
 display: inline-block;
-width: 40px;
-height: 40px;
+width: 35px;
+height: 35px;
 margin-left: 5px;
 &:after {
   position: absolute;
