@@ -7,7 +7,7 @@ const buttonStyle = {
   right: '30px',
   width: '60px',
   height: '60px',
-  zIndex: '2',
+  zIndex: '3',
   display: 'block',
   cursor: 'pointer',
   border: '1px solid #9BE564',
