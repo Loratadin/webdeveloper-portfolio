@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import media from '../../theme/media';
 import { Relative } from '../../theme/grid';
-import PlayButton from '../../components/PlayButton/PlayButton';
 
 export const VideoContainer = styled(Relative)`
   width: 90%;
@@ -15,10 +14,4 @@ export const VideoContainer = styled(Relative)`
    `}
 `;
 
-export const StyledPlayButton = styled(PlayButton)`
-   position: absolute;
-   width: 20%;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-`;
+
