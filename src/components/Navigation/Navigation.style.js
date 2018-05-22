@@ -8,9 +8,6 @@ width: 100vw;
 height: 100vh;
 background-color: ${green};
 z-index: 3;
-${media.desktop`
-  width: 40vw;
-`}
 `;
 
 export const NavItem = styled.div`
@@ -33,7 +30,6 @@ ${media.tablet`
 export const NavLink = styled.a`
 position: relative;
 left: 10%;
-width: 100px;
 text-decoration: none;
 display: inline;
 color: #d9d9d9;
@@ -45,10 +41,9 @@ animation: slide-back 0.5s forwards ease-in-out;
 &:hover {
   color: #fff;
   animation: slide 0.5s forwards ease-in-out;
- }
  @keyframes slide {
-  from {left: 10%;}
-  to {left: 13%;}
+   from {left: 10%;}
+   to {left: 13%;}
 }
 &:hover:after {
   position: absolute;
@@ -57,16 +52,35 @@ animation: slide-back 0.5s forwards ease-in-out;
   bottom: 4%;
   right: -5%;
   left: 0;
-  border-right: 5px solid #fff;
+  border-right: 2px solid #fff;
   animation: blinker 0.5s ease-in-out infinite;
+  @keyframes blinker {
+    from {border-right: 2px solid #fff}
+    to {border-right: 2px solid ${green};}
   }
-@keyframes blinker {
-    from {border-right: 5px solid #fff}
-    to {border-right: 5px solid ${green};}
-  }
-}
-`;
-
-export const Cursor = styled.p`
-display: inline-block;
+  ${media.tablet`
+  &:hover:after {
+    border-right: 3px solid #fff;
+     @keyframes blinker {
+       from {border-right: 3px solid #fff}
+       to {border-right: 3px solid ${green};}
+   }}
+   `}
+ ${media.desktop`
+ &:hover:after {
+  border-right: 5px solid #fff;
+   @keyframes blinker {
+     from {border-right: 5px solid #fff}
+     to {border-right: 5px solid ${green};}
+ }}
+ `}
+ ${media.monitor`
+ &:hover:after {
+  border-right: 5px solid #fff;
+   @keyframes blinker {
+     from {border-right: 5px solid #fff}
+     to {border-right: 5px solid ${green};}
+ }}
+ `}
+}}
 `;
