@@ -16,15 +16,18 @@ export const BurgerButton = styled.button`
   background: linear-gradient(180deg, ${lime}, ${green}, ${lemon}, ${green});
 `;
 
-export const NavigationContainer = styled.div`
+export const NavigationContainer = styled.ul`
 position: relative;
+margin: 0;
+padding: 0;
 width: 100vw;
 height: 100vh;
+list-style-type: none;
 background-color: ${green};
 z-index: 3;
 `;
 
-export const NavItem = styled.div`
+export const NavItem = styled.li`
 position: relative;
 top: 20%;
 cursor: pointer;

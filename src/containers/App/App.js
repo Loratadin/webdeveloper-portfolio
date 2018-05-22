@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
+import AboutMe from '../../containers/AboutMe/AboutMe';
 import ReallySmoothScroll from 'really-smooth-scroll';
 
 ReallySmoothScroll.shim();
@@ -7,10 +8,10 @@ ReallySmoothScroll.shim();
 class App extends Component {
   render() {
     return (
-      <div>
+       <div>
         <Navigation/>
         {this.props.children}
-      </div>
+       </div>
     );
   }
 }

@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { BurgerButton, NavigationContainer, NavItem, NavLink } from './Navigation.style';
+import { Route, Link } from 'react-router-dom';
+
+const DecorationNone = {
+ textDecoration: 'none'
+}
 
 class Navigation extends Component {
  constructor(props) {
@@ -21,13 +26,13 @@ showNav = () => {
        { this.state.show && 
          <NavigationContainer>
          <NavItem>
-           <NavLink href="/">.home</NavLink>
+           <Link style={DecorationNone} to="/"><NavLink>.home</NavLink></Link>
          </NavItem>
          <NavItem>
-           <NavLink href="/projects">.projects</NavLink>
+         <Link style={DecorationNone} to="/projects"><NavLink>.projects</NavLink></Link>
          </NavItem>
          <NavItem>
-           <NavLink href="/about-me">.about_me</NavLink>
+         <Link style={DecorationNone} to="/about-me"><NavLink>.about_me</NavLink></Link>
          </NavItem>
          <NavItem>
            <NavLink href="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI/edit?usp=sharing" target="_blank">.resume</NavLink>
