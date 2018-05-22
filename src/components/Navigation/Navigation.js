@@ -1,19 +1,6 @@
 import React, { Component } from 'react';
-import { NavigationContainer, NavItem, NavLink } from './Navigation.style';
+import { BurgerButton, NavigationContainer, NavItem, NavLink } from './Navigation.style';
 
-const buttonStyle = {
-  position: 'fixed',
-  top: '60px',
-  right: '30px',
-  width: '60px',
-  height: '60px',
-  zIndex: '4',
-  display: 'block',
-  cursor: 'pointer',
-  border: '1px solid #9BE564',
-  outline: 'inherit',
-  background: 'linear-gradient(180deg, #e2f96b, #9BE564, #fff266, #9BE564)'
-}
 class Navigation extends Component {
  constructor(props) {
   super(props);
@@ -30,7 +17,7 @@ showNav = () => {
  render() {
   return (
    <div>
-     <button style={buttonStyle} onClick={this.showNav}/>
+     <BurgerButton onClick={this.showNav}/>
        { this.state.show && 
          <NavigationContainer>
          <NavItem>
