@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
-import AboutMe from '../../containers/AboutMe/AboutMe';
 import ReallySmoothScroll from 'really-smooth-scroll';
 
 ReallySmoothScroll.shim();

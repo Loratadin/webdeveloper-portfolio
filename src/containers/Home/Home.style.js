@@ -36,3 +36,27 @@ export const Socials = styled.div`
   height: auto;
   margin-bottom: 15px;
 `;
+
+export const HomeWrapper = styled.div`
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+`;
+  
+export const SocialsWrapper = styled.div`
+position: absolute;
+top: 50%;
+left: 5%;
+width: 3%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+background-color: #fff;
+padding: 10px 0;
+`;
+  
+export const SocialImg = styled.img`
+width: 100%;
+display: block;
+`;
