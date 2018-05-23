@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { green } from '../../theme/variables';
+import media from '../../theme/media';
 
 export const HeroImage = styled.div`
 position: relative;
@@ -31,10 +32,26 @@ position: relative;
 `;
 
 export const Socials = styled.div`
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+position: relative;
+width: 100%;
+height: auto;
+margin-bottom: 5px;  
+ ${media.tablet`
+ margin-bottom: 10px;
+ `}
+ ${media.desktop`
+ margin-bottom: 12px;
+ `}
+ ${media.monitor`
+ margin-bottom: 15px; 
+ `}
+`;
+
+export const SocialLink = styled.a`
+position: relative;
+display: block;
+width: 100%;
+height: auto;
 `;
 
 export const HomeWrapper = styled.div`
@@ -46,14 +63,34 @@ overflow: hidden;
   
 export const SocialsWrapper = styled.div`
 position: absolute;
-top: 50%;
-left: 5%;
-width: 3%;
-height: auto;
 display: flex;
 flex-wrap: wrap;
-background-color: #fff;
-padding: 10px 0;
+top: 100%;
+left: 50%;
+width: 30%;
+height: auto;
+${media.tablet`
+top: 100%;
+left: 50%;
+width: 30%;
+height: auto;
+ `}
+ ${media.desktop`
+ top: 50%;
+ left: 5%;
+ width: 3%;
+ height: auto;
+ background-color: #fff;
+ padding: 10px 0;
+ `}
+ ${media.monitor`
+ top: 50%;
+ left: 5%;
+ width: 3%;
+ height: auto;
+ background-color: #fff;
+ padding: 10px 0;
+ `}
 `;
   
 export const SocialImg = styled.img`

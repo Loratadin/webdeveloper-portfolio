@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HeroImage, Socials, HomeWrapper, SocialsWrapper, SocialImg } from './Home.style';
+import { HeroImage, Socials, HomeWrapper, SocialsWrapper, SocialImg, SocialLink } from './Home.style';
 
 export default class Home extends Component {
   render() {
@@ -7,9 +7,9 @@ export default class Home extends Component {
       <HomeWrapper>
        <SocialsWrapper>
         <Socials>
-          <a href="https://github.com/Loratadin" target="_blank" rel="noopener noreferrer" >
+          <SocialLink href="https://github.com/Loratadin" target="_blank" rel="noopener noreferrer" >
             <SocialImg src={require('../../assets/github.png')} alt={'github'}/>
-          </a>
+          </SocialLink>
         </Socials>
         <Socials>
           <a href="mailto:taniashulha@gmail.com">
