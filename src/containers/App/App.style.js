@@ -11,8 +11,7 @@ export const Background = styled.div`
  background-repeat: no-repeat;
  background-position: center;
  z-index: -99;
-
  & > img {
-  width: 100%;s
+  width: 100%;
  }
 `;
