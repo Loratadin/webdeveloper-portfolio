@@ -40,11 +40,11 @@ export const MP3PlayerIcon = styled.div`
    display: block;
   }
   ${media.desktop`
-  display: block;
- `}
- ${media.monitor`
- display: block;
- `}
+   display: block;
+  `}
+  ${media.monitor`
+   display: block;
+  `}
 `;
 
 export const ColumnContainer = styled.div`
