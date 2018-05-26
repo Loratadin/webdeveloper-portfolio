@@ -36,6 +36,7 @@ position: relative;
 width: 100%;
 height: auto;
 margin-bottom: 5px;  
+transform: translate(-50%, -50%);
  ${media.tablet`
  margin-bottom: 10px;
  `}
@@ -52,20 +53,20 @@ position: relative;
 display: block;
 width: 100%;
 height: auto;
+background-color: #fff;
 `;
 
 export const HomeWrapper = styled.div`
 position: relative;
 width: 100%;
 height: 100%;
-overflow: hidden;
 `;
   
 export const SocialsWrapper = styled.div`
 position: absolute;
 display: flex;
 flex-wrap: wrap;
-top: 100%;
+top: 120%;
 left: 50%;
 width: 30%;
 height: auto;
@@ -77,19 +78,19 @@ height: auto;
  `}
  ${media.desktop`
  top: 50%;
- left: 5%;
+ left: 6.4%;
  width: 3%;
  height: auto;
- background-color: #fff;
  padding: 10px 0;
+ background-color: #fff;
  `}
  ${media.monitor`
  top: 50%;
- left: 5%;
+ left: 6.4%;
  width: 3%;
  height: auto;
- background-color: #fff;
  padding: 10px 0;
+ background-color: #fff;
  `}
 `;
   

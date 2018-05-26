@@ -12,14 +12,14 @@ export default class Home extends Component {
           </SocialLink>
         </Socials>
         <Socials>
-          <a href="mailto:taniashulha@gmail.com">
+          <SocialLink href="mailto:taniashulha@gmail.com">
             <SocialImg src={require('../../assets/email.png')} alt={'email'}/>
-          </a> 
+          </SocialLink> 
         </Socials>
         <Socials>
-          <a href="https://www.linkedin.com/in/tatsiana-shulha-450413b8/" target="_blank" rel="noopener noreferrer" >
+          <SocialLink href="https://www.linkedin.com/in/tatsiana-shulha-450413b8/" target="_blank" rel="noopener noreferrer" >
             <SocialImg src={require('../../assets/linkedin.png')} alt={'linkedin'}/>
-          </a>
+          </SocialLink>
         </Socials>
         </SocialsWrapper>
         <HeroImage>
