@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BurgerButton, NavigationContainer, NavItem, NavLink } from './Navigation.style';
 import { Route, Link } from 'react-router-dom';
+//import './Navigation.css';
 
 const DecorationNone = {
  textDecoration: 'none'
@@ -9,6 +10,11 @@ const DecorationNone = {
 class Navigation extends Component {
  constructor(props) {
   super(props);
+  
+  //const clicked = [];
+   //if(this.state.onClick){
+    // clicked.push('red');
+   //}
   
   this.state = { show: false };
 
@@ -19,6 +25,7 @@ showNav = () => {
   const {show} = this.state;
   this.setState( { show: !show } )
 }
+
  render() {
   return (
    <div>
