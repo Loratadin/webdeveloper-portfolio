@@ -33,13 +33,13 @@ showNav = () => {
        { this.state.show && 
          <NavigationContainer>
          <NavItem>
-           <Link style={DecorationNone} to="/"><NavLink>.home</NavLink></Link>
+           <Link onClick={this.showNav} style={DecorationNone} to="/"><NavLink>.home</NavLink></Link>
          </NavItem>
          <NavItem>
-         <Link style={DecorationNone} to="/projects"><NavLink>.projects</NavLink></Link>
+         <Link onClick={this.showNav} style={DecorationNone} to="/projects"><NavLink>.projects</NavLink></Link>
          </NavItem>
          <NavItem>
-         <Link style={DecorationNone} to="/about-me"><NavLink>.about_me</NavLink></Link>
+         <Link onClick={this.showNav} style={DecorationNone} to="/about-me"><NavLink>.about_me</NavLink></Link>
          </NavItem>
          <NavItem>
            <NavLink href="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI/edit?usp=sharing" target="_blank">.resume</NavLink>
