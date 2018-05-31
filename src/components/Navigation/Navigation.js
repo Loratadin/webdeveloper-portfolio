@@ -11,11 +11,6 @@ class Navigation extends Component {
  constructor(props) {
   super(props);
   
-  //const clicked = [];
-   //if(this.state.onClick){
-    // clicked.push('red');
-   //}
-
   this.menuWrapperClasses = ['menu-wrapper'];
   this.state = { show: false };
   this.showNav = this.showNav.bind(this)
