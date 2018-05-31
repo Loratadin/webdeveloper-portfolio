@@ -44,7 +44,7 @@ ${media.tablet`
  `}
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled.span`
 position: relative;
 left: 10%;
 text-decoration: none;

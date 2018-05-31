@@ -1,3 +1,16 @@
 .red {
   background-color: red;
 }
+
+.menu-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.menu-wrapper--opened {
+  display: block;
+}

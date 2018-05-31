@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BurgerButton, NavigationContainer, NavItem, NavLink } from './Navigation.style';
 import { Route, Link } from 'react-router-dom';
-//import './Navigation.css';
+import './Navigation.css';
 
 const DecorationNone = {
  textDecoration: 'none'
@@ -15,21 +15,31 @@ class Navigation extends Component {
    //if(this.state.onClick){
     // clicked.push('red');
    //}
-  
-  this.state = { show: false };
 
+  this.menuWrapperClasses = ['menu-wrapper'];
+  this.state = { show: false };
   this.showNav = this.showNav.bind(this)
 }
 
 showNav = () => {
+  this.toggleMenuWrapper();
   const {show} = this.state;
   this.setState( { show: !show } )
+}
+
+toggleMenuWrapper = () => {
+  if (this.menuWrapperClasses.length === 1) {
+    this.menuWrapperClasses.push('menu-wrapper--opened');
+  } else {
+    this.menuWrapperClasses.pop();
+  }
 }
 
  render() {
   return (
    <div>
      <BurgerButton onClick={this.showNav}/>
+     <div className={this.menuWrapperClasses.join(' ')}>
        { this.state.show && 
          <NavigationContainer>
          <NavItem>
@@ -46,6 +56,7 @@ showNav = () => {
          </NavItem>
          </NavigationContainer>
        }
+     </div>
    </div>
   );
  }

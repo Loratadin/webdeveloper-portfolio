@@ -4,6 +4,21 @@ import media from './media';
 /* eslint-disable */
 injectGlobal`
    @import url('https://fonts.googleapis.com/css?family=Orbitron');
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   img, table, tr, td {
+    border: none;
+   }
+   ol, ul {
+    list-style-type: none;
+   }
+   table {
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
    body {
     font-family: 'Orbitron', sans-serif;
     font-size: 14px;
