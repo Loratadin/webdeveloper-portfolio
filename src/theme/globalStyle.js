@@ -1,5 +1,6 @@
 import { injectGlobal } from 'styled-components';
 import media from './media';
+import { black } from './variables';
 
 /* eslint-disable */
 injectGlobal`
@@ -22,7 +23,7 @@ injectGlobal`
    body {
     font-family: 'Orbitron', sans-serif;
     font-size: 14px;
-    color: #424242;
+    color: ${black};
     line-height: 1.8;
     ${media.tablet`
     font-size: 18px;

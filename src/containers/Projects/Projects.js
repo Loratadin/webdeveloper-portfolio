@@ -10,6 +10,7 @@ import {
 import { Container, Relative } from '../../theme/grid';
 import { Link } from '../../theme/types';
 import { Background } from '../App/App.style';
+import WeatherApp from '../../components/WeatherApp';
 
 class Projects extends Component {
  render () {
@@ -202,6 +203,8 @@ class Projects extends Component {
          </p>
         </ProjectBio>
        </ProjectWrapper>
+
+       <WeatherApp/>
        
         
      </Container>
