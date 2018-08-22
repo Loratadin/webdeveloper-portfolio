@@ -17,12 +17,12 @@ class Projects extends Component {
         <h1>These are the Projects I worked on</h1>
 
         <TeamLogicIT/>
-        <ToDoApp/>
         <Montessori/>
         <Coffeeshop/>
         <Dogsperience/>
         <Mdportfolio/>
         <WeatherApp/>
+        <ToDoApp/>
    
     </Container>
   );
