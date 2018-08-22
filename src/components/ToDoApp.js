@@ -35,7 +35,7 @@ class ToDoApp extends Component {
       <ProjectBio>
         <Relative>
           <Number>
-            <h3>01</h3>
+            <h3>07</h3>
           </Number>
         </Relative>
         <h2>React based <Link href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/react-todo-app/" target="_blank">To do App</Link></h2>
