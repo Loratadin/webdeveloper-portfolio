@@ -25,7 +25,7 @@ function tablet(...args) {
 
 function desktop(...args) {
  return css`
-    @media(min-width: ${sizes.desctop}px) {
+    @media(min-width: ${sizes.desktop}px) {
      ${css(...args)}
     }
  `;
