@@ -11,7 +11,7 @@ class VideoTalk extends Component {
           <VideoContainer>       
                  <ReactPlayer 
                  controls
-                 width="100%"
+                 width="500px"
                  height="auto"
                  url={'https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4'}/>
          </VideoContainer>

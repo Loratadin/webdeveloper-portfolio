@@ -15,9 +15,9 @@ class VideoInspire extends Component {
           <VideoContainer>       
                  <ReactPlayer 
                  controls
-                 width="100%"
+                 width="500px"
                  height="auto"
-                 url={require('../../assets/video.mp4')}/>
+                 url={'https://s3.amazonaws.com/webdeveloper-portfolio-assets/travel.mp4'}/>
          </VideoContainer>
          </div>
     </div>
