@@ -4,13 +4,17 @@ import { Relative } from '../../theme/grid';
 
 export const VideoContainer = styled(Relative)`
   width: 90%;
+  padding: 0 5px;
+  box-sizing: border-box;
   margin: 0 auto;
   cursor: pointer;
-  ${media.desktop`
-  width: 80%;
+  ${media.tablet`
+  width: 400px;
+  margin: 10px auto;
    `}
-  ${media.monitor`
-  width: 70%;
+  ${media.desktop`
+  width: 500px;
+  margin: 15px auto;
    `}
 `;
 
