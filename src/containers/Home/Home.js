@@ -23,7 +23,7 @@ export default class Home extends Component {
         </Socials>
         </SocialsWrapper>
         <HeroImage>
-          <h1> &lt; ... &gt; </h1>
+          <h1> &lt; TaniaShulga / &gt; </h1>
           <h2>Front-end Developer</h2>
         </HeroImage>
       </HomeWrapper>

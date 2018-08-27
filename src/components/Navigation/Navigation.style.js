@@ -49,7 +49,7 @@ position: relative;
 left: 10%;
 text-decoration: none;
 display: inline;
-color: #d9d9d9;
+color: #424242;
 animation: slide-back 0.5s forwards ease-in-out;
 @keyframes slide-back {
   from {left: 13%;}

@@ -16,23 +16,27 @@ export const HeroImage = styled.div`
    justify-content: center;
    text-align: center;
    color: #fff;
-   h1 {
+   & > h1 {
     margin-top: 23%;
+    font-size: 20px;
    }
    ${media.tablet`
     
    `}
    ${media.desktop`
-  &:after {
-    position: absolute;
-    content: '';
-    top: -120px;
-    left: -120px;
-    right: -120px;
-    bottom: -120px;
-    border: 1px solid ${green};
-    z-index: -1;
-  }
+    &:after {
+      position: absolute;
+      content: '';
+      top: -120px;
+      left: -120px;
+      right: -120px;
+      bottom: -120px;
+      border: 1px solid ${green};
+      z-index: -1;
+    }
+    & > h1 {
+      font-size: 35px;
+     }
    `}
    ${media.monitor`
   &:after {
