@@ -79,7 +79,7 @@ export const Number = styled.div`
     ${media.tablet`
       font-size: 60px;
    `}
-   ${media.monitor`
+    ${media.monitor`
       font-size: 120px;
    `}
   }
@@ -107,5 +107,28 @@ margin-left: 5px;
 }
 & > img {
   width: 100%;
+}
+`;
+
+export const Zoomy = styled.a`
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+cursor: pointer;
+display: inline-block;
+width: 85vw;
+height: auto;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 30px 0px;
+overflow: hidden;
+${media.desktop`
+  width: 35%;
+`}
+&:hover {
+  transform: scale(1.1);
+}
+& > img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease 0s;
 }
 `;
