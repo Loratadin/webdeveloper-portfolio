@@ -38,7 +38,7 @@ font-size: 12px;
 `}
 ${media.monitor`
 font-size: 14px;
-padding: 0 150px;
+max-width: 800px;
 `}
 `;
 
@@ -111,24 +111,24 @@ margin-left: 5px;
 `;
 
 export const Zoomy = styled.a`
-box-sizing: border-box;
-margin: 0px;
-padding: 0px;
 cursor: pointer;
-display: inline-block;
+overflow: hidden;
+display: block;
 width: 85vw;
 height: auto;
-box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 30px 0px;
-overflow: hidden;
-${media.desktop`
-  width: 35%;
+box-shadow: 0 25px 30px 0 rgba(0,0,0,.2);
+${media.monitor`
+  width: 35vw;
+  box-shadow: 0 50px 60px 0 rgba(0,0,0,.2);
 `}
-&:hover {
-  transform: scale(1.1);
-}
 & > img {
+  transition: transform .3s;
   width: 100%;
   display: block;
-  transition: all 0.3s ease 0s;
+}
+&:hover {
+  & > img {
+    transform: scale(1.3);
+  }
 }
 `;
