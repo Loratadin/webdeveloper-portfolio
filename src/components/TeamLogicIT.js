@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Zoomy from 'react-zoomy';
 import {
-   ImageButton,
    ProjectBio,
    ProjectWrapper,
    Number,
-   GitLink
+   Zoomy
 } from '../containers/Projects/Projects.style';
 import { Relative } from '../theme/grid';
 import { Link } from '../theme/types';
@@ -14,24 +12,12 @@ class TeamLogicIT extends Component {
  render () {
   return (
     <ProjectWrapper>
-      <Zoomy
-        imageUrl={require('../assets/proj-teamlogic.jpg')}
-        renderThumbnail={({ showImage }) => 
-          <ImageButton onClick={showImage}>
+      <Zoomy href="https://teamlogicitplanotx.com/" target="_blank">
             <img
               src={require('../assets/proj-s-teamlogic.jpg')} 
-              alt={'TeamLogic IT'} 
+              alt={'teamlogic IT company'} 
             />
-          </ImageButton>
-        }
-        scale={[1.1, 1.1]}
-        imageProps={{
-          style: {
-          width: '100vw',
-          height: 'auto'
-          }
-        }}
-      />
+      </Zoomy>
       <ProjectBio>
         <Relative>
           <Number>
