@@ -16,7 +16,7 @@ class Coffeeshop extends Component {
     <ProjectWrapper>
       <Zoomy href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/coffeeshop/" target="_blank">
             <img
-              src={require('../assets/proj-coffeeshop.jpg')} 
+              src={require('../assets/proj-s-coffeeshop.jpg')} 
               alt={'coffeeshop concept'} 
             />
       </Zoomy>

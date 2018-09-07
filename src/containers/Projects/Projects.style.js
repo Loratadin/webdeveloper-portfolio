@@ -6,7 +6,7 @@ import media from '../../theme/media';
 export const ImageButton = styled.div`
   cursor: pointer;
   overflow: hidden;
-  display: inline-block;
+  display: block;
   width: 85vw;
   box-shadow: 0 25px 30px 0 rgba(0,0,0,.2);
   ${media.monitor`
@@ -115,7 +115,6 @@ cursor: pointer;
 overflow: hidden;
 display: block;
 width: 85vw;
-height: auto;
 box-shadow: 0 25px 30px 0 rgba(0,0,0,.2);
 ${media.monitor`
   width: 35vw;
@@ -123,7 +122,10 @@ ${media.monitor`
 `}
 & > img {
   transition: transform .3s;
+  object-fit: cover; 
+  object-position: center top;
   width: 100%;
+  height: 100%;
   display: block;
 }
 &:hover {
