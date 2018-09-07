@@ -15,7 +15,7 @@ class Mdportfolio extends Component {
     <ProjectWrapper>
       <Zoomy href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/md-portfolio/" target="_blank">
             <img
-              src={require('../assets/proj-s-md-portfolio.jpg')} 
+              src={require('../assets/proj-s-mdportfolio.jpg')} 
               alt={'MD portfolio'} 
             />
       </Zoomy>
