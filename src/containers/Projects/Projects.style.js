@@ -2,32 +2,6 @@ import styled from 'styled-components';
 import { lemon, navy, green } from '../../theme/variables';
 import media from '../../theme/media';
 
-
-export const ImageButton = styled.div`
-  cursor: pointer;
-  overflow: hidden;
-  display: block;
-  width: 85vw;
-  box-shadow: 0 25px 30px 0 rgba(0,0,0,.2);
-  ${media.monitor`
-     width: 35vw;
-     box-shadow: 0 50px 60px 0 rgba(0,0,0,.2);
-   `}
-
-  & > img {
-   transition: transform .3s;
-   width: 100%;
-   display: block;
-  }
-  
-
-  &:hover {
-   & > img {
-    transform: scale(1.3);
-   }
-  }
-`;
-
 export const ProjectBio = styled.div`
 font-size: 10px;
 text-align: center;
