@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Zoomy from 'react-zoomy';
 import {
-   ImageButton,
    ProjectBio,
    ProjectWrapper,
    Number,
-   GitLink
+   GitLink,
+   Zoomy
 } from '../containers/Projects/Projects.style';
 import { Relative } from '../theme/grid';
 import { Link } from '../theme/types';
@@ -14,24 +13,12 @@ class ToDoApp extends Component {
  render () {
   return (
     <ProjectWrapper>
-      <Zoomy
-        imageUrl={require('../assets/proj-todoapp.jpg')}
-        renderThumbnail={({ showImage }) => 
-          <ImageButton onClick={showImage}>
+      <Zoomy href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/react-todo-app/" target="_blank">
             <img
               src={require('../assets/proj-s-todoapp.jpg')} 
-              alt={'todo app'} 
+              alt={'react todo app'} 
             />
-          </ImageButton>
-        }
-        scale={[1.1, 1.1]}
-        imageProps={{
-          style: {
-          width: '100vw',
-          height: 'auto'
-          }
-        }}
-      />
+      </Zoomy>
       <ProjectBio>
         <Relative>
           <Number>
