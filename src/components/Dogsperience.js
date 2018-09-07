@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Zoomy from 'react-zoomy';
 import {
    ImageButton,
    ProjectBio,
    ProjectWrapper,
    Number,
-   GitLink
+   GitLink,
+   Zoomy
 } from '../containers/Projects/Projects.style';
 import { Relative } from '../theme/grid';
 import { Link } from '../theme/types';
@@ -30,24 +30,12 @@ class Dogsperience extends Component {
         </GitLink>
         </p>
       </ProjectBio>
-      <Zoomy
-        imageUrl={require('../assets/proj-dogsperience.jpg')}
-        renderThumbnail={({ showImage }) => 
-          <ImageButton onClick={showImage}>
+      <Zoomy href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/dogsperience/" target="_blank">
             <img
               src={require('../assets/proj-s-dogsperience.jpg')} 
-              alt={'Dogsperience homepage'} 
+              alt={'dogsperience concept'} 
             />
-          </ImageButton>
-        }
-        scale={[1.1, 1.1]}
-        imageProps={{
-          style: {
-          width: '100vw',
-          height: 'auto'
-          }
-        }}
-      />
+      </Zoomy>
     </ProjectWrapper>
   );
  }
