@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Zoomy from 'react-zoomy';
 import {
-   ImageButton,
    ProjectBio,
    ProjectWrapper,
    Number,
-   GitLink
+   GitLink, 
+   Zoomy
 } from '../containers/Projects/Projects.style';
 import { Relative } from '../theme/grid';
 import { Link } from '../theme/types';
@@ -30,24 +29,12 @@ class Montessori extends Component {
         </GitLink>
         </p>
       </ProjectBio>
-      <Zoomy
-        imageUrl={require('../assets/proj-montessori.jpg')}
-        renderThumbnail={({ showImage }) => 
-          <ImageButton onClick={showImage}>
+      <Zoomy href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/montessori/" target="_blank">
             <img
               src={require('../assets/proj-s-montessori.jpg')} 
               alt={'montessori school'} 
             />
-          </ImageButton>
-        }
-        scale={[1.1, 1.1]}
-        imageProps={{
-          style: {
-          width: '100vw',
-          height: 'auto'
-          }
-        }}
-      />
+      </Zoomy>
     </ProjectWrapper>
   );
  }
