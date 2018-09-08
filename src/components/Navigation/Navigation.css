@@ -42,8 +42,8 @@
   opacity: 0;
 }
 .burger.is-active .line:nth-child(1) {
-  transform: translateY(13px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
 }
 .burger.is-active .line:nth-child(3) {
-  transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
 }

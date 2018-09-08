@@ -24,8 +24,8 @@ showNav = () => {
 }
 
 toggleIsActive = () => {
-let element = document.getElementById('burger');
-element.classList.toggle('is-active');
+  let element = document.getElementById('burger');
+  element.classList.toggle('is-active');
 }
 
 toggleMenuWrapper = () => {
