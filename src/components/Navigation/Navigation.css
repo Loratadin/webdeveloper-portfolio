@@ -10,3 +10,40 @@
 .menu-wrapper--opened {
   display: block;
 }
+
+.burger {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+  display: block;
+  cursor: pointer;
+  border: 1px solid #9be564;
+  outline: inherit;
+  background: linear-gradient(180deg, #e2f96b, #9be564, #fff266, #9be564);
+}
+.lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.line {
+  width: 25px;
+  height: 1px;
+  display: block;
+  background-color: #424242;
+  margin: 3px auto;
+  transition: all 0.3s ease-in-out;
+}
+.burger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+.burger.is-active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+.burger.is-active .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BurgerButton, NavigationContainer, NavItem, NavLink } from './Navigation.style';
+import { NavigationContainer, NavItem, NavLink } from './Navigation.style';
 import { Route, Link } from 'react-router-dom';
 import './Navigation.css';
 
@@ -17,9 +17,15 @@ class Navigation extends Component {
 }
 
 showNav = () => {
+  this.toggleIsActive();
   this.toggleMenuWrapper();
   const {show} = this.state;
   this.setState( { show: !show } )
+}
+
+toggleIsActive = () => {
+let element = document.getElementById('burger');
+element.classList.toggle('is-active');
 }
 
 toggleMenuWrapper = () => {
@@ -33,11 +39,13 @@ toggleMenuWrapper = () => {
   render() {
     return (
       <div>
-        <BurgerButton onClick={this.showNav}>
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </BurgerButton>
+        <div id={'burger'} className={'burger'} onClick={this.showNav}>
+          <div className={'lines'}>
+            <div className={'line'}></div>
+            <div className={'line'}></div>
+            <div className={'line'}></div>
+          </div>
+        </div>
       <div className={this.menuWrapperClasses.join(' ')}>
         { this.state.show && 
           <NavigationContainer>

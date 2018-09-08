@@ -1,20 +1,29 @@
 import styled from 'styled-components';
 import media from '../../theme/media';
-import { green, lemon, lime } from '../../theme/variables';
+import { green } from '../../theme/variables';
 
-export const BurgerButton = styled.button`
-  position: fixed;
-  top: 60px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  z-index: 100;
-  display: block;
-  cursor: pointer;
-  border: 1px solid ${green};
-  outline: inherit;
-  background: linear-gradient(180deg, ${lime}, ${green}, ${lemon}, ${green});
-`;
+// export const BurgerButton = styled.button`
+//   position: fixed;
+//   top: 60px;
+//   right: 30px;
+//   width: 60px;
+//   height: 60px;
+//   z-index: 100;
+//   display: block;
+//   cursor: pointer;
+//   border: 1px solid ${green};
+//   outline: inherit;
+//   background: linear-gradient(180deg, ${lime}, ${green}, ${lemon}, ${green});
+//   & > div {
+//     width: 25px;
+//     height: 1px;
+//     display: block;
+//     background-color: ${black};
+//     margin: 3px auto;
+//     transition: all 0.3s ease-in-out;
+//   }
+//   &:is-active 
+// `;
 
 export const NavigationContainer = styled.ul`
 position: relative;
