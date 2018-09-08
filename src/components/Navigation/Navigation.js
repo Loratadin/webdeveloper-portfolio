@@ -30,30 +30,35 @@ toggleMenuWrapper = () => {
   }
 }
 
- render() {
-  return (
-   <div>
-     <BurgerButton onClick={this.showNav}/>
-     <div className={this.menuWrapperClasses.join(' ')}>
-       { this.state.show && 
-         <NavigationContainer>
-         <NavItem>
-           <Link onClick={this.showNav} style={DecorationNone} to="/"><NavLink>.home</NavLink></Link>
-         </NavItem>
-         <NavItem>
-         <Link onClick={this.showNav} style={DecorationNone} to="/projects"><NavLink>.projects</NavLink></Link>
-         </NavItem>
-         <NavItem>
-         <Link onClick={this.showNav} style={DecorationNone} to="/about-me"><NavLink>.about_me</NavLink></Link>
-         </NavItem>
-         <NavItem>
-         <Link onClick={this.showNav} style={DecorationNone} to="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI/edit?usp=sharing" target="_blank">
-         <NavLink>.resume</NavLink></Link>
-         </NavItem>
-         </NavigationContainer>
-       }
-     </div>
-   </div>
+  render() {
+    return (
+      <div>
+        <BurgerButton onClick={this.showNav}>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </BurgerButton>
+      <div className={this.menuWrapperClasses.join(' ')}>
+        { this.state.show && 
+          <NavigationContainer>
+            <NavItem>
+              <Link onClick={this.showNav} style={DecorationNone} to="/"><NavLink>.home</NavLink></Link>
+            </NavItem>
+            <NavItem>
+              <Link onClick={this.showNav} style={DecorationNone} to="/projects"><NavLink>.projects</NavLink></Link>
+            </NavItem>
+            <NavItem>
+              <Link onClick={this.showNav} style={DecorationNone} to="/about-me"><NavLink>.about_me</NavLink></Link>
+            </NavItem>
+            <NavItem>
+              <Link onClick={this.showNav} style={DecorationNone} to="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI/edit?usp=sharing" target="_blank">
+                <NavLink>.resume</NavLink>
+              </Link>
+            </NavItem>
+          </NavigationContainer>
+        }
+      </div>
+    </div>
   );
  }
 }
