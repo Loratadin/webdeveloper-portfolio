@@ -20,9 +20,6 @@ export const HeroImage = styled.div`
     margin-top: 23%;
     font-size: 20px;
    }
-   ${media.tablet`
-    
-   `}
    ${media.desktop`
     &:after {
       position: absolute;
