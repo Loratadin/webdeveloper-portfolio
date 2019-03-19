@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import media from './media';
+import styled from "styled-components";
+import media from "./media";
 
 export const Container = styled.div`
    padding: 15px 10px;

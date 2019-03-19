@@ -6,12 +6,12 @@ import AboutMe from './containers/AboutMe/AboutMe';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 export default (
-<BrowserRouter>
-<div>
-<Route path="/" component={App} />
-<Route exact path="/" component={Home} />
-<Route path="/projects" component={Projects} />
-<Route path="/about-me" component={AboutMe} />
-</div>
-</BrowserRouter>
+    <BrowserRouter>
+        <div>
+            <Route path="/" component={App} />
+            <Route exact path="/" component={Home} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/about-me" component={AboutMe} />
+        </div>
+    </BrowserRouter>
 );

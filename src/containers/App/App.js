@@ -6,9 +6,9 @@ ReallySmoothScroll.shim();
 
 class App extends Component {
   render() {
-    return ( 
+    return (
       <Navigation>
-      {this.props.children}
+        {this.props.children}
       </Navigation>
     );
   }

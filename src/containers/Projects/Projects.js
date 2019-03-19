@@ -10,23 +10,23 @@ import WeatherApp from '../../components/WeatherApp';
 import ToDoApp from '../../components/ToDoApp';
 
 class Projects extends Component {
- render () {
-  return (
-    <Container>
-      <Background><img src={require('../../assets/us-bg.png')} alt={'Us'}/></Background>
+  render() {
+    return (
+      <Container>
+        <Background><img src={require('../../assets/us-bg.png')} alt={'Us'} /></Background>
         <h1>These are the Projects I worked on</h1>
 
-        <TeamLogicIT/>
-        <Montessori/>
-        <Coffeeshop/>
-        <Dogsperience/>
-        <Mdportfolio/>
-        <WeatherApp/>
-        <ToDoApp/>
-   
-    </Container>
-  );
- }
+        <TeamLogicIT />
+        <Montessori />
+        <Coffeeshop />
+        <Dogsperience />
+        <Mdportfolio />
+        <WeatherApp />
+        <ToDoApp />
+
+      </Container>
+    );
+  }
 }
 
 export default Projects;

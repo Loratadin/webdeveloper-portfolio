@@ -8,7 +8,7 @@ const sizes = {
 };
 
 function phone(...args) {
- return css`
+   return css`
     @media(min-width: ${sizes.phone}px) {
      ${css(...args)}
     }
@@ -16,7 +16,7 @@ function phone(...args) {
 }
 
 function tablet(...args) {
- return css`
+   return css`
     @media(min-width: ${sizes.tablet}px) {
      ${css(...args)}
     }
@@ -24,7 +24,7 @@ function tablet(...args) {
 }
 
 function desktop(...args) {
- return css`
+   return css`
     @media(min-width: ${sizes.desktop}px) {
      ${css(...args)}
     }
@@ -32,7 +32,7 @@ function desktop(...args) {
 }
 
 function monitor(...args) {
- return css`
+   return css`
     @media(min-width: ${sizes.monitor}px) {
      ${css(...args)}
     }
@@ -40,10 +40,10 @@ function monitor(...args) {
 }
 
 const media = {
- phone,
- tablet,
- desktop,
- monitor
+   phone,
+   tablet,
+   desktop,
+   monitor
 };
 
 export default media;

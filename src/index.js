@@ -4,5 +4,5 @@ import './theme/globalStyle';
 
 
 ReactDOM.render(
- routes,
-document.getElementById('root'));
+    routes,
+    document.getElementById('root'));
