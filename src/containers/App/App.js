@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import ReallySmoothScroll from 'really-smooth-scroll';
+import '../../theme/scss/style.scss';
 
 ReallySmoothScroll.shim();
 
