@@ -3,7 +3,7 @@
   "name": "Tania Shulga Portfolio",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "icon.png"
     }
   ],
   "start_url": "./index.html",
