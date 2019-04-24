@@ -10,7 +10,6 @@ export default (
     <BrowserRouter>
         <div>
             <Route path="/" component={App} />
-            {/* <Route exact path="/" component={Home} /> */}
             <Route exact path="/" component={Home} />
             <Route path="/projects" component={Projects} />
             <Route path="/about-me" component={AboutMe} />
