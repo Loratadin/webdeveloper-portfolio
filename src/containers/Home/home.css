@@ -1,0 +1,12 @@
+.home__wrapper {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.home-socials__image {
+}
+.home__hero {
+  background-image: url(../../assets/us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
