@@ -22,9 +22,11 @@ export default class Home extends Component {
             </a>
           </div>
         </div>
-        <div className="home__hero">
-          <h1> &lt; TaniaShulga / &gt; </h1>
-          <h2>Front-end Developer</h2>
+        <div className="home__main">
+          <div className="home__hero">
+            <h1> &lt; TaniaShulga / &gt; </h1>
+            <h2>Front-end Developer</h2>
+          </div>
         </div>
       </div>
     );
