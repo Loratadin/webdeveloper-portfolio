@@ -24,8 +24,8 @@ export default class Home extends Component {
         </div>
         <div className="home__main">
           <div className="home__hero">
-            <h1> &lt; TaniaShulga / &gt; </h1>
-            <h2>Front-end Developer</h2>
+            <h2 className="home__hero-name"> &lt; TaniaShulga / &gt; </h2>
+            <h3 className="home__hero-role">Front-end Developer</h3>
           </div>
         </div>
       </div>
