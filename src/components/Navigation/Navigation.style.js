@@ -4,13 +4,16 @@ import { green } from '../../theme/variables';
 
 export const NavigationContainer = styled.ul`
 position: relative;
-margin: 0;
+margin-left: auto;
 padding: 0;
 width: 100vw;
 height: 100vh;
 list-style-type: none;
 background-color: ${green};
 z-index: 3;
+${media.desktop`
+  width: 30vw;
+ `}
 `;
 
 export const NavItem = styled.li`
