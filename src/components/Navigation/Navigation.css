@@ -17,7 +17,7 @@
   right: 30px;
   width: 60px;
   height: 60px;
-  z-index: 100;
+  z-index: 3;
   display: block;
   cursor: pointer;
   border: 1px solid #9be564;

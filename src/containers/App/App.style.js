@@ -10,7 +10,7 @@ export const Background = styled.div`
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
- z-index: -99;
+ z-index: -2;
  & > img {
   width: 100%;
  }

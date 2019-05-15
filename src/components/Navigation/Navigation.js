@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavigationContainer, NavItem, NavLink } from './Navigation.style';
 import { Link } from 'react-router-dom';
+import AudioPlayer from '../AudioPlayer/AudioPlayer';
 import './Navigation.css';
 
 const DecorationNone = {
@@ -38,7 +39,7 @@ class Navigation extends Component {
 
 	render() {
 		return (
-			<div>
+			<React.Fragment>
 				<div id={'burger'} className={'burger'} onClick={this.showNav}>
 					<div className={'lines'}>
 						<div className={'line'}></div>
@@ -46,6 +47,7 @@ class Navigation extends Component {
 						<div className={'line'}></div>
 					</div>
 				</div>
+				<AudioPlayer />
 				<div className={this.menuWrapperClasses.join(' ')}>
 					{this.state.show &&
 						<NavigationContainer>
@@ -66,7 +68,7 @@ class Navigation extends Component {
 						</NavigationContainer>
 					}
 				</div>
-			</div>
+			</React.Fragment>
 		);
 	}
 }
