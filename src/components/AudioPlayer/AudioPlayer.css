@@ -1,7 +1,23 @@
-.audio {
+.audio-wrap {
+  display: none;
   position: fixed;
   right: 30px;
-  top: 200px;
+  bottom: 10px;
+}
+.audio {
   width: 20px;
   outline: none;
+}
+.audio-description {
+  font-size: 10px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #d9d9d9;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+@media (min-width: 1024px) {
+  .audio-wrap {
+    display: block;
+  }
 }
