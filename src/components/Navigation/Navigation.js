@@ -61,9 +61,9 @@ class Navigation extends Component {
 								<Link onClick={this.showNav} style={DecorationNone} to="/about-me"><NavLink>.about_me</NavLink></Link>
 							</NavItem>
 							<NavItem>
-								<Link onClick={this.showNav} style={DecorationNone} to="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI" target="_blank">
+								<a onClick={this.showNav} style={DecorationNone} href="https://docs.google.com/document/d/1Im1UV7LK98O4cpUTMYA-TIJIrWgh1h5pboJudGXxKJI" target="_blank">
 									<NavLink>.resume</NavLink>
-								</Link>
+								</a>
 							</NavItem>
 						</NavigationContainer>
 					}

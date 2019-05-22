@@ -49,5 +49,5 @@
   grid-row: 2 / 2;
 }
 .home__hero-name {
-  grid-row-start: 1;
+  margin-top: -70px;
 }

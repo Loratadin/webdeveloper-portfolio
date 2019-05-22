@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from '../../theme/grid';
 import { Background } from '../App/App.style';
-import TeamLogicIT from '../../components/TeamLogicIT';
+import Bookstore from '../../components/Bookstore';
 import Montessori from '../../components/Montessori';
 import Coffeeshop from '../../components/Coffeeshop';
 import Dogsperience from '../../components/Dogsperience';
@@ -16,7 +16,7 @@ class Projects extends Component {
         <Background><img src={require('../../assets/us-bg.png')} alt={'Us'} /></Background>
         <h1>These are the Projects I worked on</h1>
 
-        <TeamLogicIT />
+        <Bookstore />
         <Montessori />
         <Coffeeshop />
         <Dogsperience />
