@@ -4,6 +4,15 @@ import  './home.css';
 export default class Home extends Component {
   render() {
     return (
+      <div className="home-container">
+        <div className="notes-container">
+          <div className="note-wrap note-wrap-first">
+            <img className="note-image" src={require('../../assets/note-1.png')} alt="note"/>
+          </div>
+          <div className="note-wrap note-wrap-second">
+            <img className="note-image" src={require('../../assets/note-2.png')} alt="note"/>
+          </div>
+        </div>
       <div className="home__wrapper">
           <div className="home__hero">
             <h2 className="home__hero-name"> &lt; TaniaShulga / &gt; </h2>
@@ -26,7 +35,8 @@ export default class Home extends Component {
             </a>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
     );
   }
 }
