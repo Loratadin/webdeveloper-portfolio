@@ -2,10 +2,25 @@ import React, { Component } from 'react';
 import  './home.css';
 
 export default class Home extends Component {
+  state = {
+    left: 0
+  }
+  componentDidMount() {
+    document.addEventListener('mousemove', this.onMouseMove)
+  }
+  onMouseMove(e) {
+    let left = 0
+    const  delta = (e.clientX - window.innerWidth / 2) * 0.5;
+    left = e.clientX + delta
+    console.log("left", left)
+    return left
+   
+  }
   render() {
+    
     return (
-      <div className="home-container">
-        <div className="notes-container">
+      <div id="home-container" className="home-container">
+        <div id="notes-overlay" className="notes-container">
           <div className="note-wrap note-wrap-first">
             <img className="note-image" src={require('../../assets/note-1.png')} alt="note"/>
           </div>
