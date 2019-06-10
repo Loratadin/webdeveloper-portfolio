@@ -25,6 +25,7 @@ injectGlobal`
     font-size: 14px;
     color: ${black};
     line-height: 1.8;
+    overflow: hidden;
     ${media.tablet`
     font-size: 18px;
     `}

@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import  './home.css';
 
 export default class Home extends Component {
-  state = {
-    left: 0
-  }
-  componentDidMount() {
-    document.addEventListener('mousemove', this.onMouseMove)
-  }
-  onMouseMove(e) {
-    let left = 0
-    const  delta = (e.clientX - window.innerWidth / 2) * 0.5;
-    left = e.clientX + delta
-    console.log("left", left)
-    return left
+  // state = {
+  //   left: 0
+  // }
+  // componentDidMount() {
+  //   document.addEventListener('mousemove', this.onMouseMove)
+  // }
+  // onMouseMove(e) {
+  //   let left = 0
+  //   const  delta = (e.clientX - window.innerWidth / 2) * 0.5;
+  //   left = e.clientX + delta
+  //   console.log("left", left)
+  //   return left
    
-  }
+  // }
   render() {
     
     return (
@@ -24,9 +24,9 @@ export default class Home extends Component {
           <div className="note-wrap note-wrap-first">
             <img className="note-image" src={require('../../assets/note-1.png')} alt="note"/>
           </div>
-          <div className="note-wrap note-wrap-second">
+          {/* <div className="note-wrap note-wrap-second">
             <img className="note-image" src={require('../../assets/note-2.png')} alt="note"/>
-          </div>
+          </div> */}
         </div>
       <div className="home__wrapper">
           <div className="home__hero">
