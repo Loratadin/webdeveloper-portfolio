@@ -19,7 +19,7 @@ class Dogsperience extends Component {
 							<h3>04</h3>
 						</Number>
 					</Relative>
-					<h2><Link href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/react-dog-app-tutorial/" target="_blank">Dog Breed Finder</Link> built in Reaupdatect</h2>
+					<h2><Link href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/react-dog-app-tutorial/" target="_blank">Dog Breed Finder</Link> built in React</h2>
 					<p>
 						Implemented a React based application that asynchronously gets dog breed names and images from an API. Applied mobile first responsive styles.
         				<GitLink
