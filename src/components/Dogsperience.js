@@ -19,9 +19,9 @@ class Dogsperience extends Component {
 							<h3>04</h3>
 						</Number>
 					</Relative>
-					<h2><Link href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/dogsperience/" target="_blank">Dogsperience</Link> Concept</h2>
+					<h2><Link href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/react-dog-app-tutorial/" target="_blank">Dog Breed Finder</Link> built in Reaupdatect</h2>
 					<p>
-						Implemented a static homepage for an online pet store concept. Used HTML, CSS and jQuery for the slider.
+						Implemented a React based application that asynchronously gets dog breed names and images from an API. Applied mobile first responsive styles.
         				<GitLink
 							href="https://github.com/Loratadin/dogsperience"
 							target="_blank"
@@ -30,10 +30,10 @@ class Dogsperience extends Component {
 						</GitLink>
 					</p>
 				</ProjectBio>
-				<Zoomy href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/dogsperience/" target="_blank">
+				<Zoomy href="http://projects.loratadin.com.s3-website-us-east-1.amazonaws.com/react-dog-app-tutorial/" target="_blank">
 					<img
 						src={require('../assets/proj-s-dogsperience.jpg')}
-						alt={'dogsperience concept'}
+						alt={'dog breed app'}
 					/>
 				</Zoomy>
 			</ProjectWrapper>
