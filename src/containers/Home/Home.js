@@ -2,28 +2,33 @@ import React, { Component } from 'react';
 import  './home.css';
 
 export default class Home extends Component {
-  // state = {
-  //   left: 0
-  // }
-  // componentDidMount() {
-  //   document.addEventListener('mousemove', this.onMouseMove)
-  // }
-  // onMouseMove(e) {
-  //   let left = 0
-  //   const  delta = (e.clientX - window.innerWidth / 2) * 0.5;
-  //   left = e.clientX + delta
-  //   console.log("left", left)
-  //   return left
-   
-  // }
+  state = {
+    leftPosition: 0,
+    topPosition: 0,
+  }
+  componentDidMount() {
+    document.addEventListener('mousemove', this.onMouseMove)
+  }
+  onMouseMove = (e) => {
+    let left = 0
+    const moveX = (window.innerWidth / 2 - e.clientX) * 0.000001;
+    const  moveY = (window.innerHeight / 2 - e.clientY) *0.000001;
+    left = e.clientX + moveX
+    top = e.clientY + moveY
+    this.setState({leftPosition: left, topPosition: top})
+  }
   render() {
-    
+    const { leftPosition } = this.state
+    console.log(leftPosition)
     return (
       <div id="home-container" className="home-container">
-        <div id="notes-overlay" className="notes-container">
-          <div className="note-wrap note-wrap-first">
+        <div className="home__background" style={{marginLeft: `${leftPosition}px`}}>
+          <div className="note-wrap">
             <img className="note-image" src={require('../../assets/note-1.png')} alt="note"/>
           </div>
+        </div>
+        <div id="notes-overlay" className="notes-container">
+
           {/* <div className="note-wrap note-wrap-second">
             <img className="note-image" src={require('../../assets/note-2.png')} alt="note"/>
           </div> */}
