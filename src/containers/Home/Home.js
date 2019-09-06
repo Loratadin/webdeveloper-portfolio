@@ -3,26 +3,41 @@ import  './home.css';
 
 export default class Home extends Component {
   state = {
-    leftPosition: 0,
-    topPosition: 0,
+    isMouseMovingLeft: false,
+    IsMouseMovingTop: false,
+    isMouseMovingBottom: false,
+    isMouseMovingRight: false,
   }
   componentDidMount() {
     document.addEventListener('mousemove', this.onMouseMove)
   }
+  componentWillUnmount() {
+    document.removeEventListener('mousemove', this.onMouseMove)
+  }
+
   onMouseMove = (e) => {
-    let left = 0
-    const moveX = (window.innerWidth / 2 - e.clientX) * 0.000001;
-    const  moveY = (window.innerHeight / 2 - e.clientY) *0.000001;
-    left = e.clientX + moveX
-    top = e.clientY + moveY
-    this.setState({leftPosition: left, topPosition: top})
+    let left = false
+    let right = false
+    let top = false
+    let bottom = false
+    left = e.clientX < (window.innerWidth / 2)
+    right = e.clientX > (window.innerWidth / 2)
+    top = e.clientY < (window.innerHeight / 2)
+    bottom = e.clientY > (window.innerHeight / 2)
+    console.log("left", left, "right", right, "top", top, "bottom", bottom)
+    this.setState({
+      isMouseMovingLeft: left,
+      IsMouseMovingTop: top,
+      isMouseMovingBottom: bottom,
+      isMouseMovingRight: right,
+    })
   }
   render() {
     const { leftPosition } = this.state
     console.log(leftPosition)
     return (
       <div id="home-container" className="home-container">
-        <div className="home__background" style={{marginLeft: `${leftPosition}px`}}>
+        <div className="home__background" >
           <div className="note-wrap">
             <img className="note-image" src={require('../../assets/note-1.png')} alt="note"/>
           </div>
