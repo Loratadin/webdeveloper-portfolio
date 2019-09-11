@@ -4,13 +4,6 @@
   /* position: fixed; */
   position: relative;
 }
-.home__background {
-  width: 120vw;
-  height: 120vh;
-  position: absolute;
-  left: -10vw;
-  top: -10vh;
-}
 .home__wrapper {
   display: grid;
   position: absolute;
@@ -68,33 +61,32 @@
 .home__hero-name {
   margin-top: -70px;
 }
-.notes-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: grid;
-  grid-template-columns: 1fr 10% 10%;
-  grid-template-rows: 1fr 10% 10%;
-  width: 100%;
-  height: 100vh;
-}
-.note-wrap {
-  width: 35px;
-  margin: 20px;
-  z-index: 3;
-  position: absolute;
-  bottom: 25vh;
-  right: 15vw;
-}
-/* .note-wrap-first {
+.home__note-container {
   grid-column: 3 / 3;
-  grid-row: 2 / 2;
-}
-.note-wrap-second {
-  grid-column: 2 / 2;
   grid-row: 3 / 3;
-} */
-.note-image {
+  position: relative;
+}
+.home__note-wrap {
+  position: absolute;
+  bottom: 50%;
+  right: 27%;
+  width: 35px;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+}
+.home__note-wrap-left {
+  transform: translate3d(-10px, 0, 10px);
+}
+.home__note-wrap-right {
+  transform: translate3d(10px, 0, 10px);
+}
+.home__note-wrap-down {
+  transform: translate3d(0, -10px, 10px);
+}
+.home__note-wrap-up {
+  transform: translate3d(0, 10px, 10px);
+}
+.home__note-image {
   width: 100%;
   display: block;
 }
