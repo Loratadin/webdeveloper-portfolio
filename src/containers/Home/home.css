@@ -75,16 +75,16 @@
   transition: all 0.5s ease-in-out;
 }
 .home__note-wrap-left {
-  transform: translate3d(-10px, 0, 10px);
+  transform: translateX(-10px);
 }
 .home__note-wrap-right {
-  transform: translate3d(10px, 0, 10px);
+  transform: translateX(10px);
 }
 .home__note-wrap-down {
-  transform: translate3d(0, -10px, 10px);
+  transform: translateY(-10px);
 }
 .home__note-wrap-up {
-  transform: translate3d(0, 10px, 10px);
+  transform: translateY(10px);
 }
 .home__note-image {
   width: 100%;
