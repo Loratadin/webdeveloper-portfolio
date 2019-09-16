@@ -3,10 +3,8 @@ import "./home.css";
 
 export default class Home extends Component {
   state = {
-    isMouseMovingLeft: false,
     isMouseMovingUp: false,
     isMouseMovingDown: false,
-    isMouseMovingRight: false
   };
   componentDidMount() {
     document.addEventListener("mousemove", this.onMouseMove);
@@ -16,26 +14,18 @@ export default class Home extends Component {
   }
 
   onMouseMove = e => {
-    let left = false;
-    let right = false;
     let top = false;
     let bottom = false;
-    left = e.clientX < window.innerWidth / 2;
-    right = e.clientX > window.innerWidth / 2;
     top = e.clientY < window.innerHeight / 2;
     bottom = e.clientY > window.innerHeight / 2;
-    console.log("left", left, "right", right, "top", top, "bottom", bottom);
     this.setState({
-      isMouseMovingLeft: left,
       isMouseMovingUp: top,
       isMouseMovingDown: bottom,
-      isMouseMovingRight: right
     });
   };
 
   render() {
-    const { isMouseMovingLeft, isMouseMovingUp, isMouseMovingDown, isMouseMovingRight } = this.state;
-    console.log("Left", isMouseMovingLeft, "Up", isMouseMovingUp, "Down", isMouseMovingDown, "Right", isMouseMovingRight)
+    const { isMouseMovingUp, isMouseMovingDown } = this.state;
     return (
       <div id="home-container" className="home-container">
         <div className="home__wrapper">
@@ -88,10 +78,8 @@ export default class Home extends Component {
 			<div className="home__note-container">
 					<div className={
 						`home__note-wrap
-            ${isMouseMovingLeft && "home__note-wrap-left"}
-            ${isMouseMovingRight && "home__note-wrap-right"}
-            ${isMouseMovingUp && "home__note-wrap-up"}
-            ${isMouseMovingDown && "home__note-wrap-down"}
+            ${isMouseMovingUp && "home__note-wrap-shaking"}
+            ${isMouseMovingDown && "home__note-wrap-shaking-two"}
             `
 					}>
 					<img

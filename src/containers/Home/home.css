@@ -74,17 +74,41 @@
   z-index: 3;
   transition: all 0.5s ease-in-out;
 }
-.home__note-wrap-left {
-  transform: translateX(-10px);
+.home__note-wrap-shaking {
+  animation: shake 4s;
+  transition: all 0.5s ease-in-out;
 }
-.home__note-wrap-right {
-  transform: translateX(10px);
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(25deg);
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-.home__note-wrap-down {
-  transform: translateY(-10px);
+.home__note-wrap-shaking-two {
+  animation: shakeTwo 4s;
+  transition: all 0.5s ease-in-out;
 }
-.home__note-wrap-up {
-  transform: translateY(10px);
+@keyframes shakeTwo {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-25deg);
+  }
+  60% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .home__note-image {
   width: 100%;
