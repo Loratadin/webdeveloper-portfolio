@@ -76,7 +76,7 @@
 }
 .home__note-wrap-shaking {
   animation: shake 4s;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 @keyframes shake {
   0% {
@@ -94,7 +94,7 @@
 }
 .home__note-wrap-shaking-two {
   animation: shakeTwo 4s;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 @keyframes shakeTwo {
   0% {
