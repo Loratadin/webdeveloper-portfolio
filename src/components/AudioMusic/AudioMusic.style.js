@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import ReactAudioPlayer from 'react-audio-player';
+
 import { lime, navy } from '../../theme/variables';
 import media from '../../theme/media';
 
-export const MP3Player = styled(ReactAudioPlayer)`
-	width: 250px;
-`;
+// export const MP3Player = styled(ReactAudioPlayer)`
+// 	width: 250px;
+// `;
 
 export const MP3PlayerWrapper = styled.div`
 	width: 250px;
