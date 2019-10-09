@@ -19,7 +19,7 @@ class AboutMe extends Component {
     return (
       <Container>
         <Background>
-          <img src={require("../../assets/doggy.png")} alt={"Doggy"} />
+          <img src="/images/doggy.png" alt="doggy" />
         </Background>
         <h1>About me</h1>
         <VideoInspire data-aos="fade-up" />
