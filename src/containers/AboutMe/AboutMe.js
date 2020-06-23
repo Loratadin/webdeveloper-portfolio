@@ -4,7 +4,6 @@ import { Background } from "../App/App.style";
 import aos from "aos";
 import "aos/dist/aos.css";
 import VideoInspire from "../../components/VideoInspire/VideoInspire";
-import AudioMusic from "../../components/AudioMusic/AudioMusic";
 import VideoTalk from "../../components/VideoTalk/VideoTalk";
 import YouTubeChannel from "../../components/YouTubeChannel/YouTubeChannel";
 
@@ -23,7 +22,6 @@ class AboutMe extends Component {
         </Background>
         <h1>About me</h1>
         <VideoInspire data-aos="fade-up" />
-        <AudioMusic />
         <VideoTalk />
         <YouTubeChannel/>
       </Container>

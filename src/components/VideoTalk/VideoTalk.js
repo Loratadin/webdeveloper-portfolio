@@ -7,7 +7,7 @@ class VideoTalk extends Component {
     render() {
         return (
             <div>
-                <H2 align="left">Seriously. What does programming mean to you?</H2>
+                <H2 align="left">What does programming mean to you?</H2>
                 <VideoContainer>
                     <ReactPlayer
                         controls
