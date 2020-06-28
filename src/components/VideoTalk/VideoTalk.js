@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { H2 } from '../../theme/types';
-import { VideoContainer } from '../../containers/AboutMe/AboutMe.style';
 import "./videoTalk.css";
 
 export default class VideoTalk extends Component {
     state = {
         isVideoPlaying: false,
-        progress: "0",
+        progressLineWidth: 920,
+        progress: 0,
     };
     componentDidUpdate() {
         if (this.state.isVideoPlaying === true) {
@@ -14,6 +14,14 @@ export default class VideoTalk extends Component {
                 this.updateProgress();
               }, 1);
         }
+    }
+
+    getProgressFillWidth = () => {
+        const { progressLineWidth, progress } = this.state;
+        const onePercent = progressLineWidth / 100;
+        const progressFillWidth = progress * onePercent;
+        console.log("onePercent", onePercent, "progressFillWidth", progressFillWidth)
+        return progressFillWidth;
     }
 
     toggleVideoPlay = () => {
@@ -32,38 +40,34 @@ export default class VideoTalk extends Component {
         this.setState({ progress: percentage });
     }
 
-    startPlayingFrom = e => {
-        console.log("e.clientX", e.clientX);
-        console.log("innerWidth", window.innerWidth);
-    }
-
     render() {
         const { isVideoPlaying, progress } = this.state;
         const isVideoFinished = progress === 100;
-        console.log("P", progress)
+        const progressFillWidth = this.getProgressFillWidth();
         return (
-            <div>
+            <React.Fragment>
                 <H2 align="left">What does programming mean to you?</H2>
-                <VideoContainer>
-                    <div  className="video-talk__wrapper">
-                        <video onClick={this.toggleVideoPlay} id="player" className="video-talk__video" >
-                            <source type="video/mp4" src="https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4"/>
-                        </video>
-                        <div className="video-talk__controls">
-                            <div onClick={this.toggleVideoPlay} className={`${!isVideoPlaying || isVideoFinished ? "video-talk__control-wrap" : "video-talk__control-hidden"}`}>
-                                <img className={`${isVideoPlaying ? "video-talk__control-hidden" : "video-talk__control-img"}`} src={require('../../assets/play-icon.svg')} alt="play"/>
-                            </div>
-                            <div onClick={this.toggleVideoPlay} className={`${isVideoPlaying ? "video-talk__control-wrap" : "video-talk__control-hidden"}`}>
-                                <img className={`${isVideoPlaying ?  "video-talk__control-img" : "video-talk__control-hidden"}`} src={require('../../assets/pause.svg')} alt="pause"/>
-                            </div>
-                            {/* <input  onClick={(e) => this.startPlayingFrom(e)} className="video-talk__progress" type="range" min={0} max={100} step={0.01} value={progress} autocomplete="off" /> */}
-                            <div onClick={(e) => this.startPlayingFrom(e)} className="video-talk__progress">
-                                <div className="video-talk__progress-fill" style={{ width: progress }}/>
-                            </div>
+                <div className="video-talk__flex-wrapper">
+                    <div className="video-talk__quote-wrapper"></div>
+                    <div className="video-talk__gif-wrapper"></div>
+                </div>
+                <div  className="video-talk__wrapper">
+                    <video onClick={this.toggleVideoPlay} id="player" className="video-talk__video" >
+                        <source type="video/mp4" src="https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4"/>
+                    </video>
+                    <div className="video-talk__controls">
+                        <div onClick={this.toggleVideoPlay} className={`${!isVideoPlaying || isVideoFinished ? "video-talk__control-wrap" : "video-talk__control-hidden"}`}>
+                            <img className={`${isVideoPlaying ? "video-talk__control-hidden" : "video-talk__control-img"}`} src={require('../../assets/play.png')} alt="play"/>
+                        </div>
+                        <div onClick={this.toggleVideoPlay} className={`${isVideoPlaying ? "video-talk__control-wrap" : "video-talk__control-hidden"}`}>
+                            <img className={`${isVideoPlaying ?  "video-talk__control-img" : "video-talk__control-hidden"}`} src={require('../../assets/pause.svg')} alt="pause"/>
+                        </div>
+                        <div  className="video-talk__progress">
+                            <div className="video-talk__progress-fill" style={{ width: progressFillWidth }}/>
                         </div>
                     </div>
-                </VideoContainer>
-            </div>
+                </div>
+            </React.Fragment>
         );
     }
 }
