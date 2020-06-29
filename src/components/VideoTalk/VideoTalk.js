@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { H2 } from '../../theme/types';
 import "./videoTalk.css";
 
 export default class VideoTalk extends Component {
     state = {
         isVideoPlaying: false,
+        isGifHidden: false,
         progressLineWidth: 920,
         progress: 0,
     };
@@ -40,21 +40,28 @@ export default class VideoTalk extends Component {
         this.setState({ progress: percentage });
     }
 
+    switchFromGifToVideo = () => {
+        this.setState({ isGifHidden: true });
+        this.toggleVideoPlay();
+    }
+    switchFromVideoToGif = () => {
+        const player = document.getElementById("player");
+        player.pause();
+        this.setState({ isGifHidden: false, isVideoPlaying: false });
+    }
+
     render() {
-        const { isVideoPlaying, progress } = this.state;
+        const { isVideoPlaying, progress, isGifHidden } = this.state;
         const isVideoFinished = progress === 100;
         const progressFillWidth = this.getProgressFillWidth();
         return (
-            <React.Fragment>
-                <H2 align="left">What does programming mean to you?</H2>
-                <div className="video-talk__flex-wrapper">
-                    <div className="video-talk__quote-wrapper"></div>
-                    <div className="video-talk__gif-wrapper"></div>
-                </div>
-                <div  className="video-talk__wrapper">
+            <div className="video-talk__section">
+                <div className="video-talk__question">What does programming mean to you?</div>
+                <div className={`${isGifHidden ?  "video-talk__wrapper" : "video-talk__wrapper-hidden"}`}>
                     <video onClick={this.toggleVideoPlay} id="player" className="video-talk__video" >
                         <source type="video/mp4" src="https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4"/>
                     </video>
+                    <div onClick={this.switchFromVideoToGif} className="video-talk__close-button">x</div>
                     <div className="video-talk__controls">
                         <div onClick={this.toggleVideoPlay} className={`${!isVideoPlaying || isVideoFinished ? "video-talk__control-wrap" : "video-talk__control-hidden"}`}>
                             <img className={`${isVideoPlaying ? "video-talk__control-hidden" : "video-talk__control-img"}`} src={require('../../assets/play.png')} alt="play"/>
@@ -67,7 +74,21 @@ export default class VideoTalk extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+                <div className={`${isGifHidden ? "video-talk__grid-container-hidden" : "video-talk__grid-container"}`}>
+                    <div className="video-talk__quote-wrapper">
+                        <div className="video-talk__quote">
+                            Without hard work and discipline it is difficult to be a professional. You can’t cheat the grind, it knows how much you have invested, it won’t give you anything you haven’t worked for.
+                        </div>
+                    </div>
+                    <div className="video-talk__gif-wrapper">
+                        <img src={require('../../assets/about-me.gif')} alt="" className="video-talk__gif" />
+                        <div onClick={this.switchFromGifToVideo} className="video-talk__gif-watch">
+                            <div className="video-talk__gif-watch-content">WATCH</div>
+                            <img className="video-talk__gif-watch-icon" src={require('../../assets/play.png')} alt="play"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         );
     }
 }

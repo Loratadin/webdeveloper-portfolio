@@ -1,11 +1,32 @@
+.video-talk__section {
+  padding: 150px 0;
+}
 .video-talk__wrapper {
+  display: block;
   position: relative;
   height: 600px;
   width: 1000px;
 }
+.video-talk__wrapper-hidden {
+  display: none;
+}
 .video-talk__video {
   height: 100%;
   width: 100%;
+}
+.video-talk__close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  background: rgba(49, 54, 92, 0.2);
+  color: #fff;
+  font-size: 18px;
+  top: 18px;
+  right: 0;
+  cursor: pointer;
 }
 .video-talk__controls {
   position: absolute;
@@ -41,4 +62,65 @@
 }
 .video-talk__control-img {
   width: 100%;
+}
+.video-talk__grid-container {
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  grid-column-gap: 100px;
+}
+.video-talk__grid-container-hidden {
+  display: none;
+}
+.video-talk__gif-wrapper {
+  position: relative;
+  width: 360px;
+}
+.video-talk__gif-watch {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  border: 2px solid rgba(49, 54, 92, 0.2);
+  background: rgba(49, 54, 92, 0.2);
+  bottom: 100px;
+  left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.video-talk__gif-watch-content {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.video-talk__gif-watch-icon {
+  width: 14px;
+  margin-left: 5px;
+}
+.video-talk__gif {
+  width: 100%;
+}
+.video-talk__quote-wrapper {
+  display: flex;
+  padding: 50px 0 0 0;
+  justify-content: flex-end;
+}
+.video-talk__quote {
+  position: relative;
+  width: 490px;
+  padding-left: 40px;
+  font-size: 28px;
+  color: rgba(49, 54, 92, 0.6);
+}
+.video-talk__quote:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: rgba(49, 54, 92, 0.2);
+  left: 0;
+  top: 0;
+}
+.video-talk__question {
+  font-size: 23px;
 }
