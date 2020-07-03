@@ -34,46 +34,62 @@ export default class Home extends Component {
             <h3 className="home__hero-role">Front-end Developer</h3>
           </div>
           <div className="home-socials__wrapper">
-            <div className="home__socials-item home__socials-item-01">
-              <a
-                className="home-socials__link"
-                href="https://github.com/Loratadin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="home-socials__image"
-                  src={require("../../assets/github.png")}
-                  alt="github"
-                />
-              </a>
-            </div>
-            <div className="home__socials-item home__socials-item-02">
-              <a
-                className="home-socials__link"
-                href="mailto:taniashulha@gmail.com"
-              >
-                <img
-                  className="home-socials__image"
-                  src={require("../../assets/email.png")}
-                  alt="email"
-                />
-              </a>
-            </div>
-            <div className="home__socials-item home__socials-item-03">
-              <a
-                className="home-socials__link"
-                href="https://www.linkedin.com/in/tatsiana-shulha-450413b8/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="home-socials__image"
-                  src={require("../../assets/linkedin.png")}
-                  alt="linkedin"
-                />
-              </a>
-            </div>
+            <ul className="home__social-items">
+              <li className="home__socials-item home__socials-item-01">
+                <a
+                  className="home-socials__link"
+                  href="https://github.com/Loratadin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="home-socials__image"
+                    src={require("../../assets/social-twitter.svg")}
+                    alt="github"
+                  />
+                </a>
+              </li>
+              <li className="home__socials-item home__socials-item-02">
+                <a
+                  className="home-socials__link"
+                  href="https://www.linkedin.com/in/tatsiana-shulha-450413b8/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="home-socials__image"
+                    src={require("../../assets/social-twitter.svg")}
+                    alt="linkedin"
+                  />
+                </a>
+              </li>
+              <li className="home__socials-item home__socials-item-03">
+                <a
+                  className="home-socials__link"
+                  href="mailto:taniashulha@gmail.com"
+                >
+                  <img
+                    className="home-socials__image"
+                    src={require("../../assets/social-twitter.svg")}
+                    alt="mail"
+                  />
+                </a>
+              </li>
+              <li className="home__socials-item home__socials-item-04">
+                <a
+                  className="home-socials__link"
+                  href="https://twitter.com/PAIRProgrammin1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="home-socials__image"
+                    src={require("../../assets/social-twitter.svg")}
+                    alt="twitter"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
 			<div className="home__note-container">
 					<div className={
