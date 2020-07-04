@@ -35,58 +35,42 @@ export default class Home extends Component {
           </div>
           <div className="home-socials__wrapper">
             <ul className="home__social-items">
-              <li className="home__socials-item home__socials-item-01">
+              <li className="home__socials-item">
                 <a
-                  className="home-socials__link"
+                  className="home-socials__link home-socials__link-01"
                   href="https://github.com/Loratadin"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    className="home-socials__image"
-                    src={require("../../assets/social-twitter.svg")}
-                    alt="github"
-                  />
+                  <i class="fa fa-github" aria-hidden="true"/>
                 </a>
               </li>
-              <li className="home__socials-item home__socials-item-02">
+              <li className="home__socials-item">
                 <a
-                  className="home-socials__link"
+                  className="home-socials__link home-socials__link-02"
                   href="https://www.linkedin.com/in/tatsiana-shulha-450413b8/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    className="home-socials__image"
-                    src={require("../../assets/social-twitter.svg")}
-                    alt="linkedin"
-                  />
+                  <i class="fa fa-linkedin" aria-hidden="true"/>
                 </a>
               </li>
-              <li className="home__socials-item home__socials-item-03">
+              <li className="home__socials-item">
                 <a
-                  className="home-socials__link"
+                  className="home-socials__link home-socials__link-03"
                   href="mailto:taniashulha@gmail.com"
                 >
-                  <img
-                    className="home-socials__image"
-                    src={require("../../assets/social-twitter.svg")}
-                    alt="mail"
-                  />
+                  <i class="fa fa-envelope" aria-hidden="true"/>
                 </a>
               </li>
-              <li className="home__socials-item home__socials-item-04">
+              <li className="home__socials-item">
                 <a
-                  className="home-socials__link"
+                  className="home-socials__link home-socials__link-04"
                   href="https://twitter.com/PAIRProgrammin1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    className="home-socials__image"
-                    src={require("../../assets/social-twitter.svg")}
-                    alt="twitter"
-                  />
+                  <i class="fa fa-twitter" aria-hidden="true"/>
                 </a>
               </li>
             </ul>

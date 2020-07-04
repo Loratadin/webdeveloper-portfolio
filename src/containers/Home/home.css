@@ -1,7 +1,6 @@
 .home-container {
   width: 100%;
   height: 100%;
-  /* position: fixed; */
   position: relative;
 }
 .home__wrapper {
@@ -30,15 +29,12 @@
 .home__socials-item {
   position: relative;
   list-style: none;
-  width: 34px;
-  height: 34px;
-  margin: 0 10px;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
   border-radius: 50%;
   background: #fff;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 .home__socials-item:before,
 .home__socials-item:after {
@@ -53,43 +49,57 @@
   filter: blur(20px);
   opacity: 0;
   transition: 1s;
-  z-index: -1;
 }
 .home__socials-item:after {
   filter: blur(40px);
 }
-.home__socials-item:hover:before,
-.home__socials-item:hover:after {
+.home__socials-item:hover::before,
+.home__socials-item:hover::after {
   opacity: 1;
-}
-.home__socials-item-01 {
-  grid-column: 2 / 2;
-}
-.home__socials-item-02 {
-  grid-column: 3 / 3;
-}
-.home__socials-item-03 {
-  grid-column: 4 / 4;
 }
 .home-socials__link {
   position: absolute;
-  width: 34px;
-  height: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   text-align: center;
+  color: #fff;
   background: #000;
   border-radius: 50%;
+  font-size: 36px;
   cursor: pointer;
+  z-index: 1;
 }
-.home-socials__image {
-  width: 20px;
+.home-socials__link .fa {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
-  transform: rotateY(0deg) scale(0.8);
+  transform: rotateY(0deg) scale(0.6);
   opacity: 0.2;
 }
-.home-socials__link:hover .home-socials__image {
+.home-socials__link:hover .fa {
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1);
+}
+.home-socials__link-01,
+.home__socials-item:nth-child(1)::before,
+.home__socials-item:nth-child(1)::after {
+  background: linear-gradient(45deg, #ff0057, #e64a19);
+}
+.home-socials__link-02,
+.home__socials-item:nth-child(2)::before,
+.home__socials-item:nth-child(2)::after {
+  background: linear-gradient(45deg, #89ff00, #00bcd4);
+}
+.home-socials__link-03,
+.home__socials-item:nth-child(3)::before,
+.home__socials-item:nth-child(3)::after {
+  background: linear-gradient(45deg, #e91e63, #5d02ff);
+}
+.home-socials__link-04,
+.home__socials-item:nth-child(4)::before,
+.home__socials-item:nth-child(4)::after {
+  background: linear-gradient(45deg, #ff0000, #ffc107);
 }
 .home__hero {
   background-image: url(../../assets/us.jpg);
