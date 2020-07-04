@@ -20,7 +20,6 @@ export default class VideoTalk extends Component {
         const { progressLineWidth, progress } = this.state;
         const onePercent = progressLineWidth / 100;
         const progressFillWidth = progress * onePercent;
-        console.log("onePercent", onePercent, "progressFillWidth", progressFillWidth)
         return progressFillWidth;
     }
 

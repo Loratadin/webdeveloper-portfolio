@@ -47,7 +47,7 @@ class Navigation extends Component {
 						<div className={'line'}></div>
 					</div>
 				</div>
-				<AudioPlayer />
+				<AudioPlayer isMenuOpen={this.state.show}/>
 				<div className={this.menuWrapperClasses.join(' ')}>
 					{this.state.show &&
 						<NavigationContainer>
