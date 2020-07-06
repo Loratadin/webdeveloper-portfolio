@@ -31,7 +31,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
   .question {
     font-size: 23px;
@@ -44,9 +44,11 @@
     margin: 0;
   }
 }
+
 @media (min-width: 1366px) {
-  .youtube__container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+  .youtube__thumbnail-wrap {
+    width: 600px;
+    height: 340px;
+    margin: 0 auto 20px auto;
   }
 }
