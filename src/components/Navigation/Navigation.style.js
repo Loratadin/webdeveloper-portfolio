@@ -9,10 +9,11 @@ padding: 0;
 width: 100vw;
 height: 100vh;
 list-style-type: none;
-background-color: ${green};
+background-color: black;
 z-index: 3;
-${media.desktop`
+${media.monitor`
   width: 30vw;
+  background-color: ${green};
  `}
 `;
 
@@ -38,7 +39,7 @@ position: relative;
 left: 10%;
 text-decoration: none;
 display: inline;
-color: #424242;
+color: white;
 animation: slide-back 0.5s forwards ease-in-out;
 @keyframes slide-back {
   from {left: 13%;}
@@ -81,6 +82,7 @@ animation: slide-back 0.5s forwards ease-in-out;
  }}
  `}
  ${media.monitor`
+ color: #424242;
  &:hover:after {
   border-right: 5px solid #fff;
    @keyframes blinker {

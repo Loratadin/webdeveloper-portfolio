@@ -1,0 +1,16 @@
+.question,
+.answer {
+  font-size: 20px;
+}
+.answer {
+  text-align: center;
+}
+@media (min-width: 1366px) {
+  .question {
+    font-size: 23px;
+  }
+  .answer {
+    font-size: 23px;
+    margin-bottom: 40px;
+  }
+}

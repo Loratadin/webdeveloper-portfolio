@@ -38,6 +38,7 @@ class Navigation extends Component {
 	}
 
 	render() {
+		const isDesktop = window.innerWidth > 1025;
 		return (
 			<React.Fragment>
 				<div id={'burger'} className={'burger'} onClick={this.showNav}>
@@ -47,7 +48,7 @@ class Navigation extends Component {
 						<div className={'line'}></div>
 					</div>
 				</div>
-				<AudioPlayer isMenuOpen={this.state.show}/>
+				{isDesktop && <AudioPlayer isMenuOpen={this.state.show} />}
 				<div className={this.menuWrapperClasses.join(' ')}>
 					{this.state.show &&
 						<NavigationContainer>

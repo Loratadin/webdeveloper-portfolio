@@ -4,7 +4,7 @@ const sizes = {
    phone: 300,
    tablet: 451,
    desktop: 769,
-   monitor: 1025
+   monitor: 1366
 };
 
 function phone(...args) {

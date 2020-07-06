@@ -26,6 +26,7 @@ export default class Home extends Component {
 
   render() {
     const { isMouseMovingUp, isMouseMovingDown } = this.state;
+    const isDesktop = window.innerWidth > 1025;
     return (
       <div id="home-container" className="home-container">
         <div className="home__wrapper">
@@ -42,7 +43,7 @@ export default class Home extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-github" aria-hidden="true"/>
+                  <i className="fa fa-github" aria-hidden="true"/>
                 </a>
               </li>
               <li className="home__socials-item">
@@ -52,7 +53,7 @@ export default class Home extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-linkedin" aria-hidden="true"/>
+                  <i className="fa fa-linkedin" aria-hidden="true"/>
                 </a>
               </li>
               <li className="home__socials-item">
@@ -60,7 +61,7 @@ export default class Home extends Component {
                   className="home-socials__link home-socials__link-03"
                   href="mailto:taniashulha@gmail.com"
                 >
-                  <i class="fa fa-envelope" aria-hidden="true"/>
+                  <i className="fa fa-envelope" aria-hidden="true"/>
                 </a>
               </li>
               <li className="home__socials-item">
@@ -70,25 +71,27 @@ export default class Home extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-twitter" aria-hidden="true"/>
+                  <i className="fa fa-twitter" aria-hidden="true"/>
                 </a>
               </li>
             </ul>
           </div>
-			<div className="home__note-container">
-					<div className={
-						`home__note-wrap
-            ${isMouseMovingUp && "home__note-wrap-shaking"}
-            ${isMouseMovingDown && "home__note-wrap-shaking-two"}
-            `
-					}>
-					<img
-					className="home__note-image"
-					src={require("../../assets/note-1.png")}
-					alt="note"
-					/>
-				</div>
-			</div>
+          {isDesktop && (
+            <div className="home__note-container">
+              <div className={
+                `home__note-wrap
+                ${isMouseMovingUp && "home__note-wrap-shaking"}
+                ${isMouseMovingDown && "home__note-wrap-shaking-two"}
+                `
+              }>
+                <img
+                className="home__note-image"
+                src={require("../../assets/note-1.png")}
+                alt="note"
+                />
+            </div>
+          </div>
+          )}
         </div>
       </div>
     );

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { VideoContainer } from '../../containers/AboutMe/AboutMe.style';
+import ReactPlayer from 'react-player';
 import "./videoTalk.css";
 
 export default class VideoTalk extends Component {
@@ -57,10 +59,39 @@ export default class VideoTalk extends Component {
         const { isVideoPlaying, progress, isGifHidden } = this.state;
         const isVideoFinished = progress === 100;
         const progressFillWidth = this.getProgressFillWidth();
+        const isBigScreen = window.innerWidth > 1365;
         return (
             <div className="video-talk__section">
                 <div className="video-talk__question">What does programming mean to you?</div>
-                <div className={`${isGifHidden ? "video-talk__video-grid-container" : "video-talk__gif-grid-container"}`}>
+                {isBigScreen ? (
+                    <div className="video-container-wrapper">
+                        <div className="video-container">
+                                <video onClick={this.toggleVideoPlay} id="player" className="video">
+                                    <source type="video/mp4" src="https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4"/>
+                                </video>
+                            <div className="video-talk__controls">
+                                <div onClick={this.toggleVideoPlay} className={`${!isVideoPlaying || isVideoFinished ? "video-talk__control-wrap" : "video-talk__control-hidden"}`}>
+                                    <img className={`${isVideoPlaying ? "video-talk__control-hidden" : "video-talk__control-img"}`} src={require('../../assets/play.png')} alt="play"/>
+                                </div>
+                                <div onClick={this.toggleVideoPlay} className={`${isVideoPlaying ? "video-talk__control-wrap" : "video-talk__control-hidden"}`}>
+                                    <img className={`${isVideoPlaying ?  "video-talk__control-img" : "video-talk__control-hidden"}`} src={require('../../assets/pause.svg')} alt="pause"/>
+                                </div>
+                                <div  className="video-talk__progress">
+                                    <div className="video-talk__progress-fill" style={{ width: progressFillWidth }}/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ): (
+                    <VideoContainer>
+                        <ReactPlayer
+                            controls
+                            width="100%"
+                            height="auto"
+                            url={"https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4"} />
+                    </VideoContainer>
+                )}
+                {/* <div className={`${isGifHidden ? "video-talk__video-grid-container" : "video-talk__gif-grid-container"}`}>
                     <div className={`${isGifHidden ? "video-talk__video-container" : "video-talk__video-container-hidden"}`}>
                         <video onClick={this.toggleVideoPlay} id="player" className={`${isGifHidden ? "video-talk__video" : "video-talk__video-hidden"}`}>
                             <source type="video/mp4" src="https://s3.amazonaws.com/webdeveloper-portfolio-assets/about-me.mp4"/>
@@ -90,7 +121,7 @@ export default class VideoTalk extends Component {
                             Without hard work and discipline it is difficult to be a professional. You can’t cheat the grind, it knows how much you have invested, it won’t give you anything you haven’t worked for.
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }
