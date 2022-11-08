@@ -14,7 +14,7 @@
     "react-player": "^1.11.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "react-toggle-state": "^0.2.1",
     "react-waypoint": "^8.1.0",
     "really-smooth-scroll": "^2.1.1",
